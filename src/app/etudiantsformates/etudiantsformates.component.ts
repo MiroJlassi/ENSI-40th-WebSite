@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-etudiants',
-  templateUrl: './etudiants.component.html',
-  styleUrls: ['./etudiants.component.css']
+  selector: 'app-etudiantsformates',
+  templateUrl: './etudiantsformates.component.html',
+  styleUrls: ['./etudiantsformates.component.css']
 })
-export class EtudiantsComponent implements OnInit {
+export class EtudiantsformatesComponent implements OnInit {
   etudiants = [
     { nom: "Sakli", prenom:"Eya", photo:"assets/Eya.jpg", dateNaissance:new Date(2002, 9,5), moyenne:12.37, boursier: false, ville:"Tunis"},
     { nom: "Mrad", prenom:"Yassine",photo:"assets/Yassine.jpg",  dateNaissance:new Date(2001, 4,28), moyenne:9.95 , boursier: false, ville:"Nabeul"},
@@ -23,7 +23,6 @@ export class EtudiantsComponent implements OnInit {
     ", originaire de : "+ this.etudiants[i].ville +
     " a une moyenne de : " + this.etudiants[i].moyenne + boursier;
   }
-
   constructor() { }
 
   ngOnInit(): void {
