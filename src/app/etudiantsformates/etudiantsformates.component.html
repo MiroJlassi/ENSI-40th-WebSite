@@ -1,17 +1,41 @@
-<h1>Liste des étudiants</h1>
-<ul>
-    <li *ngFor="let et of etudiants;index as i; count as cpt">
-        <strong>Etudiant num {{i+1}}/ {{cpt}}</strong>
-        <img [src]="et.photo" alt="photo">
-        <span>{{et.prenom }} </span>
-        <span>{{et.nom | uppercase}}</span>
-        <br>
-        <span>Date de naissance: {{et.dateNaissance | date:'dd/MM/yyyy'}}</span>
-        <span *ngIf="et.moyenne>=10"> Moyenne: {{et.moyenne}}</span>
-        <button (click)="afficherInfos(i)">Infos</button>
-    </li>
-</ul>
-<div *ngIf="afficher">
-    {{infos}}
-    <button (click)="afficher=false">Fermer</button>
+<div class="container">
+    <h1>Liste des étudiants</h1>
+    <ul class="list-group">
+        <li *ngFor="let et of etudiants;index as i; count as cpt" [ngClass]="{
+            'group-item d-flex justify-content-between align-items-centerlist': true,
+            'list-group-item-info': et.option ==='DSI',
+            'list-group-item-secondary': et.option ==='SEM'         
+        }">
+            <div>
+                <strong>Etudiant num {{i+1}}/ {{cpt}} </strong>
+                <img [src]="et.photo" alt="photo">
+                <span>{{et.prenom }} </span>
+                <span>{{et.nom | uppercase}} </span>
+                <span class="badge bg-light text-dark">
+                    {{et.option}}
+                </span>
+                <span> Date de naissance:
+                    <span class="badge bg-secondary">
+                        {{et.dateNaissance | date:'dd/MM/yyyy'}}
+                    </span>
+                </span>
+            </div>
+            <div>
+                <strong *ngIf="et.moyenne>=10"> 
+                    <i [ngClass]="{'fa-solid fa-award': et.moyenne>=16}"></i> 
+                    Moyenne:
+                    {{et.moyenne}} 
+                </strong>
+                <button (click)="afficherInfos(i)" class="btn btn-primary">
+                    <i class="fa-solid fa-circle-info"></i>
+                    Infos
+                </button>
+            </div>
+        </li>
+    </ul>
+    <div *ngIf="afficher" class="mt-4 px-3 text-bg-light rounded d-flex justify-content-between">
+        {{infos}}
+        <button class="btn btn-dark btn-sm" (click)="afficher=false">Fermer</button>
+    </div>
+
 </div>

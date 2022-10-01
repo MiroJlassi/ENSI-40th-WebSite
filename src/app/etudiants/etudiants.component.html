@@ -4,10 +4,11 @@
         <strong>Etudiant num {{i+1}}/ {{cpt}}</strong>
         <img [src]="et.photo" alt="photo">
         <span>{{et.prenom }} </span>
-        <span>{{et.nom | uppercase}}</span>
-        <br>
-        <span>Date de naissance: {{et.dateNaissance | date:'dd/MM/yyyy'}}</span>
-        <span *ngIf="et.moyenne>=10"> Moyenne: {{et.moyenne}}</span>
+        <span>{{et.nom | uppercase}} </span>
+        -<span> {{et.option}} </span>
+   
+        -<span> Date de naissance: {{et.dateNaissance | date:'dd/MM/yyyy'}}</span>
+        <strong *ngIf="et.moyenne>=10"> Moyenne: {{et.moyenne}} </strong>
         <button (click)="afficherInfos(i)">Infos</button>
     </li>
 </ul>
