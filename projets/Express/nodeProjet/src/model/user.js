@@ -7,12 +7,16 @@ const usersSchema = new mongoose.Schema({
   lastName: {
     type: String,
   },
-  mail: {
+  email: {
     type: String,
   },
   password: {
     type: String,
   },
-  cart : { type: mongoose.Schema.Types.ObjectId, ref: "cart " },
+  image: {
+    type: String,
+  },
+  cart: [{ type: mongoose.Schema.Types.ObjectId, ref: "cart " }],
 });
+
 export default mongoose.model("user", usersSchema);

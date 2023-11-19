@@ -13,8 +13,10 @@ const corsOpts = {
 };
 app.use(express.json());
 app.use(cors(corsOpts));
-app.use("/user", userRouter);
-app.use("/product", productRouter);
+
+app.use("/getImage", express.static("./upload"));
+app.use("/users", userRouter);
+app.use("/products", productRouter);
 
 
 ConnectToBd();

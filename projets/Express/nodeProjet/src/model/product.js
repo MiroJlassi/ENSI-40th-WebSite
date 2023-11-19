@@ -13,6 +13,7 @@ const productsSchema = new mongoose.Schema({
   description : {
     type: String,
   },
+  cart: [{ type: mongoose.Schema.Types.ObjectId, ref: "cart " }],
 
 });
 export default mongoose.model("product", productsSchema);

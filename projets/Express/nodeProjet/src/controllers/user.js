@@ -1,4 +1,7 @@
 import User from "../model/user.js";
+import bcrypt from "bcrypt";
+import jwt from "jsonwebtoken";
+import config from "../config/var.js"
 
 const getAllUser = async (req, res) => {
   try {
@@ -11,11 +14,12 @@ const getAllUser = async (req, res) => {
   }
 };
 
-const addUser = async (req, res) => {
+const register = async (req, res) => {
   try {
     console.log(req.body);
-    
+    req.body.password = await bcrypt.hash(req.body.password, 10);
     let NewUsers = new User(req.body);
+   
     NewUsers.cart=[]
     console.log(JSON.stringify(NewUsers));
     NewUsers.save();
@@ -51,6 +55,30 @@ const upDateUser = async (req, res) => {
   }
 };
 
+const login = async (req,res) =>{
+  if (!req.body.email) {
+    res.status(400).json({ mesg: "need de passe username" });
+  }else {
+    const user = await User.findOne({ email: req.body.email })
+   
+    console.log(user);
+
+    if (!user) {
+      res.status(400).json({ mesg: "email not find" });
+    } else {
+      if (await bcrypt.compare(req.body.password, user.password)) {
+        const accessToken = jwt.sign(
+          user.toJSON(),
+          config.ACCESS_TOKEN_SECRET
+        );
+        res.status(200).json({ token: accessToken, user });
+      } else {
+        res.status(400).json({ mesg: "the passe word is bad" });
+      }
+    }
+  }
+}
+
 const getUserById = async (req, res) => {
   try {
     const user = await User.findById(req.params.id).populate("cart");
@@ -63,8 +91,9 @@ const getUserById = async (req, res) => {
 
 export default {
   getAllUser,
-  addUser,
+  register,
   upDateUser,
   deleteUser,
   getUserById,
+  login
 };
