@@ -22,7 +22,7 @@ const register = async (req, res) => {
    
     NewUsers.cart=[]
     console.log(JSON.stringify(NewUsers));
-    NewUsers.save();
+    await NewUsers.save();
     res.status(200).json(NewUsers);
   } catch (e) {
     console.log(e);
