@@ -1,0 +1,63 @@
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar{
+    position: fixed;
+    background-color: #2B2D34;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    text-align: center;
+    z-index: 100;
+    border-bottom: 1px solid #747579;    
+    box-shadow: 0px 5px 5px rgba(0,0,0,0.2);
+
+}
+
+.navigation{
+    font-weight: bold;
+    margin: 0px 20px;
+    transition-duration: 0.3s;
+    width: fit-content;
+    cursor: pointer;
+    height: 30px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border-bottom: 5px solid rgba(255, 255, 255, 0);
+}
+
+.navigation:hover{
+    border-bottom: 5px solid #00C2FF;
+    border-radius: 3px;
+
+}
+
+
+.registrebtn{
+    background-color: #00C2FF;
+    border-radius: 10px;
+    height: 40px;
+    min-width: 150px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 40px 0px 20px ;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+.registrebtn:hover{
+    background-color: white;
+    color:#00C2FF;
+    box-shadow: 1px 5px 5px rgba(0,0,0,0.5);
+
+}
+
+
