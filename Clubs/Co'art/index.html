@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter"> <!--google fonts-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css"> <!--lib for the slider-->
+    <link rel="stylesheet" href="../../Prefabs/Scroll.css">
     <title>Co’ART</title>
 </head>
 <body>
@@ -17,21 +18,29 @@
 
 
 
+        <div id="top"></div><a href="index.html#top" style="z-index: 100; text-decoration: none; position: fixed; bottom: 10px; right: 20px; width: 40px; height: 40px; background-color: #00C2FF; border-radius: 50%;text-align: center;display: flex;align-items: center;justify-content: center;opacity: 0.5;">↑</a>
 
 
 
 
 
         <!--NAV BAR-->
-        <div class="navbar"> 
+        <div class="navbar">
             <link rel="stylesheet" href="../../Prefabs/navBar.css">
             <div style="width: 50%;"></div>
-            <a href="../../index.html" class="navigation"><div>HOME</div></a>
-            <div class="navigation">ACTIVITIES</div>
-            <div class="navigation">SCHEDULE</div>
-            <Div class="navigation">CLUBS</Div>
-            <div class="registrebtn">REGISTRE</div>
+            <div class="menu-icon" onclick="toggleMenu()">☰</div>
+            <a href="../../index.html#home" class="navigation"><div>HOME</div></a>
+            <a href="../../index.html#event1" class="navigation"><div>EVENT1</div></a>
+            <a href="../../index.html#event2" class="navigation"><div>EVENT2</div></a>
+            <a href="../../index.html#club" class="navigation"><div>CLUBS</div></a>
+            <a href="../../index.html" class="navigation"><div class="registrebtn">REGISTRE</div></a>
         </div>
+        <script>
+            function toggleMenu() {
+            var navbar = document.querySelector('.navbar');
+            navbar.classList.toggle('menu-open');
+            }
+        </script>
 
 
 

@@ -1,45 +1,69 @@
+/* Add this CSS inside your <style> tag or styles.css file */
+
+/* Navbar styling */
+
 a{
     text-decoration: none;
     color: inherit;
+    margin-left: 20px;
+    transition-duration: 0.3s;
+    font-weight: bold;
 }
 
-.navbar{
+a:hover{
+    scale: 1.2;
+}
+.navbar {
     position: fixed;
-    background-color: #2B2D34;
+    background-color: rgba(43, 45, 52, 0.7);
     width: 100%;
     height: 70px;
     display: flex;
     align-items: center;
-    justify-content: end;
+    justify-content: space-between;
     text-align: center;
     z-index: 100;
-    border-bottom: 1px solid #747579;    
-    box-shadow: 0px 5px 5px rgba(0,0,0,0.2);
-
-}
-
-.navigation{
-    font-weight: bold;
-    margin: 0px 20px;
-    transition-duration: 0.3s;
-    width: fit-content;
+    border-bottom: 2px solid #747579;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.5);
+  }
+  
+  /* Logo and Branding */
+  .logo {
+    margin-left: 20px;
+    color: #fff;
+    font-size: 24px;
+  }
+  
+  /* Hamburger Menu Icon */
+  .menu-icon {
+    display: none; /* Hide by default */
+    font-size: 24px;
+    margin-right: 20px;
+    color: #fff;
     cursor: pointer;
-    height: 30px;
-
+  }
+  
+  /* Navigation links */
+  .navigation {
     display: flex;
+    justify-content: space-around;
     align-items: center;
-    text-align: center;
-    border-bottom: 5px solid rgba(255, 255, 255, 0);
-}
-
-.navigation:hover{
-    border-bottom: 5px solid #00C2FF;
-    border-radius: 3px;
-
-}
-
-
-.registrebtn{
+  }
+  
+  .navigation a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    margin: 0 10px;
+    transition: all 0.3s ease;
+  }
+  
+  .navigation a:hover {
+    border-bottom: 2px solid #00C2FF;
+  }
+  
+  /* Registration button */
+  .registrebtn {
     background-color: #00C2FF;
     border-radius: 10px;
     height: 40px;
@@ -48,16 +72,55 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0px 40px 0px 20px ;
+    margin-right: 20px;
     cursor: pointer;
-    transition-duration: 0.3s;
-}
+    transition: background-color 0.3s ease;
 
-.registrebtn:hover{
-    background-color: white;
-    color:#00C2FF;
-    box-shadow: 1px 5px 5px rgba(0,0,0,0.5);
-
-}
-
-
+  }
+  
+  .registrebtn:hover {
+    background-color: #fff;
+    color: #00C2FF;
+  }
+  
+  /* Media query for smaller screens */
+  @media screen and (max-width: 1000px) {
+    /* Adjustments for smaller screens */
+    .navbar {
+      height: auto; /* Let the navbar height adjust based on its contents */
+      flex-direction: column; /* Stack items vertically */
+      align-items: flex-start; /* Align items to the start of the navbar */
+      padding: 10px 20px; /* Add padding for better spacing */
+    }
+  
+    .logo {
+      margin-left: 0;
+      margin-bottom: 10px; /* Add margin below logo */
+    }
+  
+    .menu-icon {
+      display: block; /* Show the menu icon */
+    }
+  
+    .navigation {
+      display: none; /* Hide the navigation items by default */
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px; /* Add margin on top */
+    }
+  
+    .navigation a {
+      margin: 10px 0; /* Add margin between navigation items */
+    }
+  
+    .registrebtn {
+      margin-right: 0;
+      margin-top: 20px; /* Add margin on top */
+    }
+  
+    .menu-open .navigation {
+      display: flex; /* Show the navigation items when the hamburger menu icon is clicked */
+    }
+  }
+  

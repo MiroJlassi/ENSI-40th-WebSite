@@ -4,6 +4,433 @@ body, html{
     font-family: Inter;
     scroll-behavior: smooth;
     background-color: #2B2D34;
-    color: rgb(255, 255, 255);
+    color: white;
+}
+.container{
+    height: 100vh;
+    overflow-y: scroll ;
+    scroll-snap-type: y mandatory;
+}
+  
+.section{
+    margin-top:100px ;
+    height: 100vh;
+    width: 100%;
+    scroll-snap-align: start;
 }
 
+
+
+
+
+
+/* section 1*/
+
+.covervideo {
+    z-index: -1;
+    max-height: 700px;
+    width: 100%;
+    object-fit: fill;
+    box-shadow: 0 0 50px rgba(0,0,0,1);
+}
+
+.arrow-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: bounce 2s infinite;
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+.arrow {
+    width: 50px;
+    height: 50px;
+    border: solid 20px  #00C2FF;
+    border-radius: 2px;
+    border-width: 0 10px 10px 0;
+    transform: rotate(45deg);
+    box-shadow: 0 0 50px rgba(0,0,0,1);
+
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-7px);
+    }
+}
+
+
+.txt{
+    min-width: 300px;
+    width: 50%;
+    text-align: justify;
+    height: 100%;
+    padding: 3% 10% 0 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.dip{
+    background-color: #00C2FF;
+    padding: 10px 40px;
+    border-radius:30px 10px 30px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 0.5s;
+    cursor: pointer;
+    font-size: 70%;
+    margin-bottom: 10px;
+}
+
+.dip:hover{
+    background-color: white;
+    color: #2B2D34;
+    box-shadow: 0 0 50px rgba(0,0,0,1);
+    scale: 1.2;
+}
+
+
+/*centres*/
+.centrecontainer{
+    position: relative;
+    width: 90%;
+    height: 50%;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+
+.centre-card{
+    width: 60%;
+    height: 30%;
+    background-color: rgba(255, 255, 255, 0.211);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.01);
+    margin: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.centrename{
+    width: 20%;
+    margin-right: 20px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 2px solid rgba(255, 255, 255, 0.341) ;
+}
+
+
+.centretext{
+    width: 50%;
+    font-size: 100%;
+    height: 100%;
+    padding: 10px;
+    text-align: left;
+}
+
+
+.readmorecentre{
+    height: 200%;
+    width: 25%;
+    /*background-color:#585858 ;*/
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size:80%;
+    left: 30%;
+    transition: all 0.3s ease;
+    transition-delay: 0.3s;
+    background-color: #00C2FF;
+}
+
+
+
+
+.centre-card:hover .centrename{
+    color:#00C2FF;
+}
+
+.centre-card:hover {
+    width: 100%;
+    height: 50%;
+    border: #00C2FF solid 5px;
+    color: white;
+    box-shadow: 0 4px 20px rgba(0, 162, 255, 0.2);
+}
+
+.centre-card:hover .readmorecentre{
+    transform: translateX(-100%);
+}
+
+
+.hiddentxt{
+    display: none;
+    text-align: justify;
+    transition: all 1s ease-in;
+    transition-delay: 3s; 
+}
+
+.centre-card:hover .hiddentxt{
+    display: inline-block;
+}
+
+/************************************************************************************/
+
+.card {
+    width: 200px;
+    height: 150px;
+    background-color: rgba(255, 255, 255, 0.211);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.01);
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+.card:hover {
+    transform: scale(1.1);
+    background-color: #00C2FF;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.description {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+    z-index: 1;
+    opacity: 0;
+    transform: translateY(100%);
+}
+.card:hover .description {
+    opacity: 1;
+    transform: translateY(0%);
+}
+
+
+.btn {
+    background-color: #00C2FF;
+    padding: 0px 50px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #fff;
+    color: #00C2FF;
+}
+
+
+/* ************************* SEIF :: COUNTDOWN :: ************************************ */
+
+.slogan40ENSI{
+    width: 100%;
+    height: 5%;
+    font-size: 150%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slogan40ENSI span{
+    color: #00C2FF;
+}
+
+.countdown{
+    height: 150px;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 20px;
+}
+
+.countdown div{
+    height: 100%;
+    width: 25%;
+}
+
+.countdown div p{
+    font-size: 300%;
+    margin-bottom: 10%;
+}
+.countdown div span{
+    width: 100%;
+    height: 100%;
+}
+/************************************************************************/
+
+
+.locimg{
+    width: 250px;
+    height: 200px;
+    object-fit: block;
+    border-radius: 22px;
+}
+
+
+
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.stat-item {
+    width: 20%;
+    height: 150px;
+    background-color: rgba(255, 255, 255, 0.211);
+    border-radius: 22px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.01);
+    padding: 10px 20px 20px 20px ;
+    margin: 2%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.stat-item:hover {
+    transform: scale(1.1);
+    background-color: #00C2FF;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.stat-item h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.stat-item p {
+    font-size: 18px;
+    margin: 0;
+}
+
+
+
+/* HADIL */
+.big{
+    padding:0;
+}
+
+.box1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /*flex-wrap: wrap;*/
+}
+
+.hcard{
+    height:130px;
+    width:130px;
+    margin: 10px;
+    overflow: hidden;
+    border-radius: 5px;
+    background-color: black;
+    transition-duration: 0.3s;
+}
+
+
+
+.hcard-back{
+    height:130px;
+    width: 130px;
+    border-radius: 5px;
+    border-color: black;
+    transition-duration: 0.3s;
+
+}
+
+.hcard:hover .hcard-back{
+    transform: scale(1.05);
+    filter: blur(4px);
+}
+
+.hcard-content {
+    width: inherit;
+    height: inherit;
+    font-weight: 100px;
+    transform: translateY(20%);
+    text-align: center;
+    opacity: 0;
+    transition: transform 500ms ease-out, opacity 500ms ease-out;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition-duration: 0.3s;
+}
+a{
+    text-decoration: none;
+}
+/*.hcard-content h2{
+    margin-top: 30px;
+    padding-top: 20px;
+    font-weight: 400;
+    font-style: normal;
+}*/
+.hchange{
+    color:#00c2ff;
+}
+.hchange2{
+    color: #3c3e44;
+}
+
+.hcard:hover .hcard-content{
+    opacity: 1;
+    background:linear-gradient(180deg, rgba(64, 64, 64, 0) 0%, rgba(96, 96, 96, 0.3) 10%, rgb(96, 96, 96) 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.hcard:hover{
+    cursor: pointer;
+    transform: translate(5px);
+    box-shadow: 2px 6px 12px rgba(0, 0, 0, 0.2);
+}
+/* -------- */
