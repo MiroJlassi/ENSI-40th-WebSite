@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="Prefabs/navBar.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+    <link rel="stylesheet" href="Prefabs/Scroll.css">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <div class="container">
+        <!-- NAV BAR-->
+        <!--<div class="navbar">
+            <link rel="stylesheet" href="Prefabs/navBar.css">
+            <div style="width: 50%;"> ENSI 40th ANNIVERSARY</div>
+            <a href="../../index.html" class="navigation"><div>HOME</div></a>
+            <a href="../../index.html" class="navigation"><div>EVENT 1</div></a>
+            <a href="../../index.html" class="navigation"><div>EVENT 2</div></a>
+            <a href="../../index.html" class="navigation"><div>CLUBS</div></a>
+            <div class="registrebtn">REGISTRE</div>
+        </div>-->
+
+        <div class="navbar">
+            <div style="width: 50%;"></div>
+            <div class="menu-icon" onclick="toggleMenu()">☰</div>
+            <a href="../../index.html#home" class="navigation"><div>HOME</div></a>
+            <a href="../../index.html#event1" class="navigation"><div>EVENT1</div></a>
+            <a href="../../index.html#event2" class="navigation"><div>EVENT2</div></a>
+            <a href="../../index.html#club" class="navigation"><div>CLUBS</div></a>
+            <a href="../../index.html" class="navigation"><div class="registrebtn">REGISTRE</div></a>
+        </div>
+        <script>
+            function toggleMenu() {
+            var navbar = document.querySelector('.navbar');
+            navbar.classList.toggle('menu-open');
+            }
+        </script>
+
+        <section class="section" id="top">
+            <video autoplay muted loop class="covervideo">
+                <source src="Media/looping video.mp4" type="video/mp4">
+            </video>
+            <div class="arrow-container" id="arrowContainer">
+                <div class="arrow"></div>
+            </div>
+        </section>
+
+        <section class="section" id="home">
+            <div style="width: 100%;height: 100%; display: flex;">
+                <div class="txt">
+                    <h1>ABOUT ENSI</h1>
+                    <div style="height:2px; background-color: #747579; width: 60%;box-shadow: 0px 5px 5px rgba(0,0,0,0.2);"></div>
+
+                    <p  style="text-indent: 20px;">
+                        ENSI, founded in 1984, as the first engineering school in Tunisia dedicated to computer sciences, is
+                        celebrating its fortieth anniversary this year.
+                    </p>
+                    <p  style="text-indent: 20px;">
+                        ENSI vision is “to be a “Grande Ecole” of excellence dedicated to computer sciences ranked among
+                        the best schools throughout the world&quot;, with the mission of “educating global citizens (engineers,
+                        researchers) with critical thinking and leaders in responsible digital innovations”.
+                    </p>
+    
+                    <p  style="text-indent: 20px;">
+                        Its fundamental and shared common core values are E. N. S. I. C. I., refereeing respectively to
+                        Excellence, Networking, Sustainability, Innovation in addition to Citizenship and Inclusion. In fact,
+                        believing that Excellence have no limits and can never been achieved individually, ENSI is committed
+                        to reach better positions and outcomes through multi-level and multi-scale Networking. Also, ENSI is
+                        very engaged for local as well as global Sustainability by continuing its noble missions at an
+                        international level through contributing to Innovations in processes as well “products”.
+                    </p>
+                </div>
+                <div style="display: flex; justify-content: center; align-items: center;width: 50%;">
+                    <img src="Media/pic 1.jpg" alt="" style="width: 100%;">
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div style="width: 100%;height: 100%; display: flex;justify-content: center; align-items: center;flex-direction: column;">
+                <h1>ENSI delivers the following NATIONAL DIPLOMA</h1>
+                <div style="height:2px; background-color: #747579; width: 60%;margin-bottom: 30px;    box-shadow: 0px 5px 5px rgba(0,0,0,0.2);"></div>
+                <div>
+                    <div class="dip">
+                        <h1>National Engineering Diploma in Computer Science Engineering</h1>
+                    </div>
+                    <div class="dip">
+                        <h1>Research Master in Computer Science (MeRSI)</h1>
+                    </div>
+                    <div class="dip">
+                        <h1>Joint Research Master in BioInformatics</h1>
+                    </div>
+                    <div class="dip">
+                        <h1>Doctorate in computer science</h1>
+                    </div>
+                    <div class="dip">
+                        <h1>“Habilitation Universitaire” in Computer Science</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section">
+            <div style="width: 100%;height: 100%; display: flex;justify-content: center; align-items: center;flex-direction: column;">
+                <h1>ENSI holds a Research and Innovation Center including</h1>
+                <div style="height:2px; background-color: #747579; width: 60%;margin-bottom: 30px;box-shadow: 0px 5px 5px rgba(0,0,0,0.2);"></div>
+                
+                <div class="centrecontainer">
+                    <div class="centre-card">
+                        <div class="centrename"><img src="/Media/RIADI.png" alt="" style="height: 100%;width: 100%; "></div>
+                        <div class="centretext">
+                            <h1>LABO CRISTAL</h1>
+                            <p style="text-indent: 20px;">RIADI est un des plus importants laboratoires de recherche en Informatique en Tunisie qui se spécialise dans la recherche en Génie Logiciel, Applications distribuées, Systèmes décisionnels et Imagerie intelligente.
+                            <span class="hiddentxt" style="text-indent: 20px;">
+                                Il a été créé en 1999 à la suite du regroupement de deux unités de recherche de l’ENSI travaillant dans le domaine du génie logiciel (PGL) et de l’Informatique Arabisée et Documentique (Riadi)....
+                            </span>
+                            </p></div>
+                        <div class="readmorecentre" onclick="openLinkInNewTabRiadi()"><h3>READ MORE</h3></div>
+                    </div>
+
+
+
+                    <div class="centre-card">
+                        <div class="centrename" style="background-color: white;"><img src="/Media/CRISTAL.png" alt="" style="height: 100%;width: 100%;"></div>
+                        <div class="centretext">
+                            <h1>LABO CRISTAL</h1>
+                            <p style="text-indent: 20px;">Centre de Recherche en Réseaux Image  SysTème  Architecture et MultiMédia
+                            <span class="hiddentxt" style="text-indent: 20px;">
+                                Les chercheurs du Laboratoire CRISTAL dveloppent leurs comptences autour de deux axes complmentaires : les réseaux et limagerie avec les axes connexes dans les domaines des systèmes distribués, de lintelligence artificielle et des mathmatiques appliques. 
+                            </span>
+                            </p></div>
+                        <div class="readmorecentre" onclick="openLinkInNewTabCristal()"><h3>READ MORE</h3></div>
+                    </div>
+            </div>
+            <div style="height:2px; background-color: #747579; width: 60%;margin-bottom: 30px;box-shadow: 0px 5px 5px rgba(0,0,0,0.2);"></div>
+
+        </section>
+
+
+        <section class="section" id="event1">
+            <video autoplay muted loop class="covervideo">
+                <source src="Media/looping video 2.mp4" type="video/mp4">
+            </video>
+            <div class="arrow-container" id="arrowContainer">
+                <div class="arrow"></div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div style="width: 100%;height: 100%; display: flex;justify-content: center; align-items: center;flex-direction: column;">
+                <h1>About THE EVENT: ENSI Research & Innovation Days</h1>
+                <div style="height:2px; background-color: #747579; width: 60%;margin-bottom: 30px;    box-shadow: 0px 5px 5px rgba(0,0,0,0.2);"> </div>
+                <p style="text-indent: 20px;width: 80%; text-align: justify;">
+                    As part of the celebration activities of the 40th anniversary of ENSI, the ENSI Research &
+                    Innovation Days are planned to gather together all researchers affiliated to ENSI or to any of
+                    its four research structures as well as their team members. This event will be also open to
+                    welcoming national and international colleagues and partners.
+                </p>
+                <p style="text-indent: 20px;width: 80%; text-align: justify;">
+                    The ultimate challenging objective of these days is to enhance the connections among all
+                    existing networks of people, knowledge and their socio-economic-environmental ecosystems
+                    in order to lead to Impactful, Responsible Seamless Research, Innovation &amp; Development
+                    sustainable and resilient chains!
+                </p>
+                <p style="text-indent: 20px;width: 80%; text-align: justify;">
+                    Thus, by focusing on the main ENSI researchers achievements, this specific objectives are : <br>
+                    • Promote networking and team building of all researchers affiliated to ENSI as well as its research structures (three big research laboratories and one research units) at a local level, and with researchers all over Tunisia and worldwide, <br>
+                    • Promote exchange of researchers and industrial experts <br>
+                    • Stimulate impactful research through the Valorization of research results through
+                        valorization of innovations
+                </p>
+                <p style="text-indent: 20px;width: 80%; text-align: justify;">
+                    This first edition of “ENSI Research and Innovation Days” will begin with a special focus on the
+                    historical and pioneering role of ENSI in Teaching and Research of Artificial Intelligence since its
+                    foundation in 1984.
+                </p>
+                <div class="btn">
+                    <a href="Downloadables/Program event 1.pdf" download="pogram_event_1">DOWNLOAD PROGRAM</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="event2">
+            <img src="Media/Cover pic.png" alt="" style="width: 100%;height: 700px;    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);">
+            <div class="arrow-container" id="arrowContainer">
+                <div class="arrow"></div>
+            </div>
+        </section>
+
+        
+        <section class="section">
+            <div style="width: 100%;height: 100%; display: flex;justify-content: center; align-items: center;flex-direction: column; text-align: center;">
+                <!--<h1>EVENT 2 ENSI 24</h1>-->
+                <!--HOME PAGE SEIF !!-->
+                <!--<div class="arrow-container" id="arrowContainer" style="margin: 10px 0px;">
+                    <div class="arrow"></div>
+                </div>-->
+
+                <div style="margin-top: 50px; width: 50%;height: 40%;padding: 20px;">
+                    <img src="/Media/logo.png" alt="" style="width: 100%;max-height: 300px;min-height: 200px;">
+                </div>
+                <div class="slogan40ENSI">
+                    <p>SOURCE OF <span>INNOVATION</span> ... ACROSS GENERATIONS</p>
+                </div>
+                <div class="countdown">
+                    <div>
+                        <p id="days">00</p>
+                        <span><h1>Days</h1></span>
+                    </div>
+                    <div>
+                        <p id="hours">00</p>
+                        <span><h1>Hours</h1></span>
+                    </div>
+                    <div>
+                        <p id="minutes">00</p>
+                        <span><h1>Minutes</h1></span>
+                    </div>
+                    <div>
+                        <p id="seconds">00</p>
+                        <span><h1>Seconds</h1></span>
+                    </div>
+                </div>
+                <script src="/Prefabs/counter.js"></script>
+            </div>
+        </section>
+
+        <section class="section">
+            <div style="width: 100%;height: 100%; display: flex;justify-content: center; align-items: center;flex-direction: column; text-align: center;">
+                <h1>ABOUT EVENT + SCHEDULE</h1>
+                <div style="height:2px; background-color: #747579; width: 60%;margin-bottom: 30px;    box-shadow: 0px 5px 5px rgba(0,0,0,0.2);"> </div>
+                <p>COMING SOON</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div style="width: 100%;height: 100%; display: flex;justify-content: center; align-items: center;flex-direction: column; text-align: center;">
+                <h1>ACTIVITIES: Workshops/competition</h1>
+                <div style="height:2px; background-color: #747579; width: 60%;margin-bottom: 30px;    box-shadow: 0px 5px 5px rgba(0,0,0,0.2);"> </div>
+                <p>COMING SOON</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div style="width: 100%;height: 100%; display: flex;justify-content: center; align-items: center;flex-direction: column; text-align: center;">
+                <h1 style="margin-top: 50px;">ENSI 40 YEARS OF EXCELLENCE</h1>
+                <div style="height:2px; background-color: #747579; width: 60%;margin-bottom: 10px;    box-shadow: 0px 5px 5px rgba(0,0,0,0.2);"> </div>
+
+                <p>Since its establishment in 1984, ENSI has achieved remarkable milestones:</p>
+                <div class="stats">
+                    <div class="stat-item">
+                        <h2>+5000</h2>
+                        <p>Engineers Worldwide</p>
+                    </div>
+                    <div class="stat-item">
+                        <h2>+480</h2>
+                        <p>Doctoral Theses</p>
+                    </div>
+                    <div class="stat-item">
+                        <h2>+30</h2>
+                        <p>Habilitation Universitaire</p>
+                    </div>
+                    <div class="stat-item">
+                        <h2>+30</h2>
+                        <p>Master Bioinformatique</p>
+                    </div>
+                    <div class="stat-item">
+                        <h2>+600</h2>
+                        <p>Research Masters</p>
+                    </div>
+                </div>
+                <div class="btn">
+                    <a href="Downloadables/Stats ENSI_pour_anniv_40ans.xlsx" download="STATS">DOWNLOAD STATISTICS</a>
+                </div>
+            </div>
+        </section>
+        
+
+        <section class="section">
+            <div style="width: 100%;height: 100%; display: flex;justify-content: center; align-items: center;flex-direction: column; text-align: center;">
+                <h1>ALUMNI</h1>
+                <div style="height:2px; background-color: #747579; width: 60%;margin-bottom: 30px;    box-shadow: 0px 5px 5px rgba(0,0,0,0.2);"> </div>
+                <p>COMING SOON</p>
+            </div>
+        </section>
+
+        <section class="section" id="club">
+            <div style="padding-top:20px ; width: 100%;height: 100%; display: flex;justify-content: center; align-items: center;flex-direction: column; text-align: center;">
+                <h1>MEET OUR CLUBS</h1>
+                <div style="height:2px; background-color: #747579; width: 60%;margin-bottom: 30px;    box-shadow: 0px 5px 5px rgba(0,0,0,0.2);"> </div>
+
+                <!-- Club Grid : Hadil !!-->
+                <div class="big">
+
+                    <div class="box1">
+            
+                        <article class="hcard">
+                            <img  class="hcard-back"  src="Media/LOGO/chess.jpg" >
+                            <div class="hcard-content">
+                                <a href=""><h2 class="hchange">Show More</h2></a>
+                            </div>
+                        </article>
+            
+                        <article class="hcard">
+                            <img  class="hcard-back"  src="Media/LOGO/hapiness.jpg" >
+                            <div class="hcard-content">
+                                <a href=""><h2 class="hchange">Show More</h2></a>
+                            </div>
+                        </article>
+            
+                        <article class="hcard">
+                            <img  class="hcard-back"  src="Media/LOGO/junior.jpg" >
+                            <div class="hcard-content">
+                                <a href=""><h2 class="hchange">Show More</h2></a>
+                            </div>
+                        </article>
+            
+                        <article class="hcard">
+                            <img  class="hcard-back"  src="Media/LOGO/ecpc.jpg"  >
+                            <div class="hcard-content">
+                                <a href=""><h2 class="hchange">Show More</h2></a>
+                            </div>
+                        </article>
+            
+                        <article class="hcard">
+                            <img  class="hcard-back"  src="Media/LOGO/enactus.jpg"  >
+                            <div class="hcard-content">
+                                <a href=""><h2 class="hchange">Show More</h2></a>
+                            </div>
+                        </article>
+            
+                    </div>
+                <!---->
+                    <div class="box1">
+            
+                        <article class="hcard">
+                            <img  class="hcard-back"  src="Media/LOGO/coart.jpg"  >
+                            <div class="hcard-content">
+                                <a href=""><h2 class="hchange2">Show More</h2></a>
+                            </div>
+                        </article>
+            
+                        <article class="hcard">
+                            <img  class="hcard-back"  src="Media/LOGO/cps.jpg" >
+                            <div class="hcard-content">
+                                <a href=""><h2 class="hchange2">Show More</h2></a>
+                            </div>
+                        </article>
+            
+                        <article class="hcard">
+                            <img  class="hcard-back"  src="Media/LOGO/ieee.jpg"  >
+                            <div class="hcard-content">
+                                <a href="Clubs/IEEE/index.html"><h2 class="hchange2">Show More</h2></a>
+                            </div>
+                        </article>
+            
+                        <article class="hcard">
+                            <img  class="hcard-back"  src="Media/LOGO/music.jpg"  >
+                            <div class="hcard-content">
+                                <a href=""><h2 class="hchange2">Show More</h2></a>
+                            </div>
+                        </article>
+            
+                        <article class="hcard">
+                            <img  class="hcard-back"  src="Media/LOGO/ossec.jpg"  >
+                            <div class="hcard-content">
+                                <a href=""><h2 class="hchange2">Show More</h2></a>
+                            </div>
+                        </article>
+            
+                    </div>
+                    <!---->
+                    <div class="box1">
+            
+                        <article class="hcard">
+                            <img  class="hcard-back"  src="Media/LOGO/are.jpg"  >
+                            <div class="hcard-content">
+                                <a href=""><h2 class="hchange">Show More</h2></a>
+                            </div>
+                        </article>
+                        
+                        <article class="hcard">
+                            <img  class="hcard-back"  src="Media/LOGO/tunsa.jpg"  >
+                            <div class="hcard-content">
+                                <a href="Clubs/TUNSA/index.html"><h2 class="hchange">Show More</h2></a>
+                            </div>
+                        </article>
+                    </div>
+                    <!---->
+                </div> 
+                <div class="btn">
+                    <a href="Downloadables/Catalogue Club.pdf" download="Club_Catalogue">DOWNLOAD CLUB CATALOG</a>
+                </div>
+            </div>
+        </section>
+        <!-- FOOTER INES-->
+        <section class="section">
+            <div style="width: 100%;height: 100%; display: flex;justify-content: end; align-items: end;flex-direction: column; text-align: center;">
+                <h1 style="font-weight: bolder;font-size: 50px;box-shadow: 0px 5px 5px rgba(0,0,0,0.2);">THANK YOU ❤️</h1>
+                <div style="width: 99.6%;height: 40%;display: flex;justify-content: center;align-items: center;flex-direction: column;background-color:#3C3E44; border-radius: 10px 10px 0px 0px;box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.2);">
+                    <div style="display: flex; justify-content: space-around; align-items: center;width: 90%;">
+                        <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;width: 30%;height: 70%; border-right: 2px solid #747579;">
+                            <img src="Media/LOGO vect.png" alt="" width="100px">
+                            E N S I
+                        </div>
+                        <div style="width: 30%;border-right: 2px solid #747579; height: 70%;text-align: left;">
+                            <h1>CONTACT US</h1>
+                            <p style="text-indent: 20px;">Tel : 71 600 444</p>
+                            <p style="text-indent: 20px;">Fax : 71 600 449</p>
+                            <p style="text-indent: 20px;">Email : webmaster@ensi.rnu.tn</p>
+                        </div>
+                        <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;width: 30%;height: 70%;">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3194.19888244034!2d10.061185611451046!3d36.813753866819624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12fd2d96d4a9d6c9%3A0xbbe38a2694938acf!2s%C3%89cole%20Nationale%20des%20Sciences%20de%20l&#39;Informatique!5e0!3m2!1sfr!2stn!4v1712164131960!5m2!1sfr!2stn" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"referrerpolicy="no-referrer-when-downgrade" class="locimg"></iframe>
+                            Campus Universitaire de la Manouba - 2010 Tunisie
+                        </div>
+                    </div>
+                    <div style="height:2px; background-color: #747579; width: 100%;margin: 10px 0px;box-shadow: 0px 5px 5px rgba(0,0,0,0.2);"> </div>
+                    <div style="width: 80%;height: 40px;display: flex; justify-content: space-between;align-items: center;">
+                        <div>
+                            © copyright 2014 | ALL RIGHTS RESERVED
+                        </div>
+                        <div style="display: flex; opacity: 50%;">
+                            <img src="Media/FB.png" alt="" style="width: 30px;border-radius: 20px;">
+                            <img src="Media/IN.png" alt="" style="width: 30px; margin-left: 10px; background-color: white; border-radius: 100%;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <a href="../../index.html#top" style="text-decoration: none; position: fixed; bottom: 10px; right: 20px; width: 40px; height: 40px; background-color: #00C2FF; border-radius: 50%;text-align: center;display: flex;align-items: center;justify-content: center;opacity: 0.5;">↑</a>
+</body>
+</html>

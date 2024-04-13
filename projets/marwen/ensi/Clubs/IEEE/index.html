@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter"> <!--google fonts-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css"> <!--lib for the slider-->
+    <link rel="stylesheet" href="../../Prefabs/Scroll.css">
+    <title>IEEE</title>
+</head>
+<body>
+    <div class="container">
+
+
+
+
+
+
+
+
+
+
+
+
+        <!--NAV BAR-->
+        <div class="navbar">
+            <link rel="stylesheet" href="../../Prefabs/navBar.css">
+            <div style="width: 50%;"></div>
+            <div class="menu-icon" onclick="toggleMenu()">☰</div>
+            <a href="../../index.html#home" class="navigation"><div>HOME</div></a>
+            <a href="../../index.html#event1" class="navigation"><div>EVENT1</div></a>
+            <a href="../../index.html#event2" class="navigation"><div>EVENT2</div></a>
+            <a href="../../index.html#club" class="navigation"><div>CLUBS</div></a>
+            <a href="../../index.html" class="navigation"><div class="registrebtn">REGISTRE</div></a>
+        </div>
+        <script>
+            function toggleMenu() {
+            var navbar = document.querySelector('.navbar');
+            navbar.classList.toggle('menu-open');
+            }
+        </script>
+
+
+
+
+
+
+
+
+
+
+<div id="top"></div><a href="index.html#top" style="z-index: 100; text-decoration: none; position: fixed; bottom: 10px; right: 20px; width: 40px; height: 40px; background-color: #00C2FF; border-radius: 50%;text-align: center;display: flex;align-items: center;justify-content: center;opacity: 0.5;">↑</a>
+
+
+
+        <!--Cover Section-->
+        <section class="section">
+            <div class="cover">
+                <img src="Media/Cover.jpg" alt="" style="width: 100%; height:100%;margin-bottom: -100px; ;">
+                <div class="arrow-container" id="arrowContainer">
+                    <div class="arrow"></div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!--Club Description-->
+        <section class="section">
+            <div class="main">
+                <div style="display: flex; justify-content: center; align-items: center; width: 100%;">
+                    <img src="Media/logo.png" alt="" class="logo">
+                </div>
+                <div class="txt">
+                    <h1>ABOUT US</h1>
+                    <p style="text-indent: 20px;">
+                        The IEEE student branch at ENSI was founded in October
+                        2011 with the intention of sharpening their skills
+                        realize their creativity and increase self-confidence.
+                        It brings together 270 active members, the majority of whom are in the engineering cycle.
+                        They are distributed over 2 poles: Sponsoring and Media
+                        and can join our 3 chapters and our affinity group...
+                    </p>
+                    <a href="https://ensi.ieee.tn/" style="width: 100%; display: flex; justify-content: center; align-items: center;">
+                        <h1 style="width: 50%;padding: 15px 20px; background-color: rgba(0, 0, 0, 0.2);border-radius: 20px;">
+                            TAKE A TOUR IN OUR WEBSITE
+                        </h1>
+                    </a>
+                </div>
+                <h3>OUR CHAPTERS</h3>
+                <div class="numbers">
+                    <a href="https://ensi.ieee.tn/IAS" style="width: 22%;">
+                        <h1 style="padding: 10px 20px; background-color: rgba(7,129,7,255);border-radius: 10px;text-align: center;">
+                            IAS CHAPTER
+                        </h1>
+                    </a>
+                    <a href="https://ensi.ieee.tn/CIS" style="width: 22%;">
+                        <h1 style="padding: 10px 20px; background-color:rgba(73,139,210,255);border-radius: 10px;text-align: center;">
+                            CIS CHAPTER
+                        </h1>
+                    </a>
+                    <a href="https://ensi.ieee.tn/CS" style="width: 22%;">
+                        <h1 style="padding: 10px 20px; background-color: rgba(249,162,51,255);border-radius: 10px;text-align: center; ">
+                            CS CHAPTER
+                        </h1>
+                    </a>
+                    <a href="https://ensi.ieee.tn/WIE" style="width: 22%;">
+                        <h1 style="padding: 10px 20px; background-color:rgba(168,82,125,255);border-radius: 10px;text-align: center;">
+                            WIE Affinity Group
+                        </h1>
+                    </a>
+                </div>
+            </div>    
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!--Image Slider-->
+        <section class="section" >
+                <div class="glide">
+                    <div class="glide__track" data-glide-el="track" >
+                        <ul class="glide__slides" >
+                            <li class="glide__slide"><img src="Media/1.jpg" alt="Image 1"></li>
+                            <li class="glide__slide"><img src="Media/2.jpg" alt="Image 1"></li>
+                            <li class="glide__slide"><img src="Media/3.jpg" alt="Image 1"></li>
+                            <li class="glide__slide"><img src="Media/4.jpg" alt="Image 1"></li>
+                            <li class="glide__slide"><img src="Media/5.jpg" alt="Image 1"></li>
+                            <li class="glide__slide"><img src="Media/6.jpg" alt="Image 1"></li>
+                            <li class="glide__slide"><img src="Media/7.jpg" alt="Image 1"></li>
+                            <li class="glide__slide"><img src="Media/8.jpg" alt="Image 1"></li>
+                            <li class="glide__slide"><img src="Media/9.jpg" alt="Image 1"></li>
+                            <li class="glide__slide"><img src="Media/10.jpg" alt="Image 1"></li>
+                            <li class="glide__slide"><img src="Media/11.jpg" alt="Image 1"></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+                <script src="../../Prefabs/slider.js"></script>
+        </section>
+        
+
+
+        <!--Video Section-->
+        <section class="section" id="vid">
+            <div class="teaser">
+                <iframe style="border: 20px; margin-bottom: 100px;" width="80%" height="50%" src="https://www.youtube.com/embed/WupYuVdYxTs?si=rCzQotU4jT-imDrX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                KNOW MORE ABOUT US !
+            </div>
+        </section>
+
+        
+        <!--Footer Section-->
+        <section class="section" id="footer">
+            This is the footer content.
+        </section>
+    </div>
+
+    <a href="../../index.html#"></a>
+    <div id="scrollToTop" onclick="scrollToTop()">↑</div>
+</body>
+</html>
+
+

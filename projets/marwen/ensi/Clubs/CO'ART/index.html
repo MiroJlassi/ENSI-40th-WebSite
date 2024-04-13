@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter"> <!--google fonts-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css"> <!--lib for the slider-->
+    <link rel="stylesheet" href="../../Prefabs/Scroll.css">
+    <title>Co’ART</title>
+</head>
+<body>
+    <div class="container">
+
+
+
+
+
+
+
+        <div id="top"></div><a href="index.html#top" style="z-index: 100; text-decoration: none; position: fixed; bottom: 10px; right: 20px; width: 40px; height: 40px; background-color: #00C2FF; border-radius: 50%;text-align: center;display: flex;align-items: center;justify-content: center;opacity: 0.5;">↑</a>
+
+
+
+
+
+        <!--NAV BAR-->
+        <div class="navbar">
+            <link rel="stylesheet" href="../../Prefabs/navBar.css">
+            <div style="width: 50%;"></div>
+            <div class="menu-icon" onclick="toggleMenu()">☰</div>
+            <a href="../../index.html#home" class="navigation"><div>HOME</div></a>
+            <a href="../../index.html#event1" class="navigation"><div>EVENT1</div></a>
+            <a href="../../index.html#event2" class="navigation"><div>EVENT2</div></a>
+            <a href="../../index.html#club" class="navigation"><div>CLUBS</div></a>
+            <a href="../../index.html" class="navigation"><div class="registrebtn">REGISTRE</div></a>
+        </div>
+        <script>
+            function toggleMenu() {
+            var navbar = document.querySelector('.navbar');
+            navbar.classList.toggle('menu-open');
+            }
+        </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!--Cover Section-->
+        <section class="section">
+            <video autoplay muted loop class="covervideo">
+                <source src="Media/Copy of launchday.mp4" type="video/mp4">
+            </video>
+            <div class="arrow-container" id="arrowContainer">
+                <div class="arrow"></div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!--Club Description-->
+        <section class="section">
+            <div class="main">
+                <div style="display: flex; justify-content: center; align-items: center; width: 100%;">
+                    <img src="Media/logo (1).jpg" alt="" class="logo" >
+                </div>
+                <div class="txt">
+                    <h1>ABOUT US</h1>
+                    <p>Co’ART is short for collaborative art. <br>      
+                        we collaborate with our fellow ENSI clubs for their events 
+                        and we’re all about promoting creativity. <br>
+                        We believe that everyone has a little artist in them. 
+                        Therefore, we provide a suitable space for all club members 
+                        to freely express their passion and creativity. <br> 
+                        Our activities involve two main aspects: collaborating with other ENSI clubs
+                         and hosting internal workshops such as calligraphy, painting, coloring 
+                        and crafting workshops.</p>
+                </div>
+                <div class="numbers">
+                    <div class="num"> +100 Active Members</div>
+                    <div class="num"> 7 Collaborations </div>
+                    <div class="num"> 6 Various Workshops</div>
+                </div>
+            </div>    
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!--Image Slider-->
+        <section class="section" >
+            <div class="glide">
+                <div class="glide__track" data-glide-el="track" >
+                    <ul class="glide__slides" >
+                        <li class="glide__slide"><img src="Media/1.jpg" alt="Image 1"></li>
+                        <li class="glide__slide"><img src="Media/2.jpg" alt="Image 2"></li>
+                        <li class="glide__slide"><img src="Media/3.jpg" alt="Image 2"></li>
+                        <li class="glide__slide"><img src="Media/4.jpg" alt="Image 2"></li>
+                        <li class="glide__slide"><img src="Media/5.jpg" alt="Image 2"></li>
+                        <li class="glide__slide"><img src="Media/6.jpg" alt="Image 2"></li>
+                        <li class="glide__slide"><img src="Media/7.jpg" alt="Image 2"></li>
+                        <li class="glide__slide"><img src="Media/8.jpg" alt="Image 2"></li>
+                        <li class="glide__slide"><img src="Media/9.jpg" alt="Image 2"></li>
+                        <li class="glide__slide"><img src="Media/10.jpg" alt="Image 2"></li>
+                        <li class="glide__slide"><img src="Media/11.jpg" alt="Image 2"></li>
+                        <li class="glide__slide"><img src="Media/12.jpg" alt="Image 2"></li>
+                        <li class="glide__slide"><img src="Media/13.jpg" alt="Image 2"></li>
+                        <li class="glide__slide"><img src="Media/14.jpg" alt="Image 2"></li>
+                        <li class="glide__slide"><img src="Media/15.jpg" alt="Image 2"></li>
+                    </ul>
+                </div>
+            </div>
+            <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+            <script src="../../Prefabs/slider.js"></script>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!--Video Section-->
+        <section class="section" id="vid">
+            <div class="teaser">
+                <video controls autoplay style="width: 50%;min-width: 300px; border-radius: 20px;box-shadow: 0px 0px 50px black;margin-bottom: 50px;">
+                    <source src="Media/Activity list.mp4" type="video/mp4">
+                </video>
+                KNOW MORE ABOUT US !
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!--Footer Section-->
+        <section class="section" id="footer">
+            This is the footer content.
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+    <!-- UP ARROW !! 
+    <div id="scrollToTop" onclick="scrollToTop()">↑</div>
+    <script>
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+    -->
+</body>
+</html>

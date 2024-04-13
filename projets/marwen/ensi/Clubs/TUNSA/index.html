@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter"> <!--google fonts-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css"> <!--lib for the slider-->
+    <link rel="stylesheet" href="../../Prefabs/Scroll.css">
+    <title>Co’ART</title>
+</head>
+<body>
+    <div class="container">
+
+        <div id="top"></div><a href="index.html#top" style="z-index: 100; text-decoration: none; position: fixed; bottom: 10px; right: 20px; width: 40px; height: 40px; background-color: #00C2FF; border-radius: 50%;text-align: center;display: flex;align-items: center;justify-content: center;opacity: 0.5;">↑</a>
+
+        <!--NAV BAR-->
+        <div class="navbar">
+            <link rel="stylesheet" href="../../Prefabs/navBar.css">
+            <div style="width: 50%;"></div>
+            <div class="menu-icon" onclick="toggleMenu()">☰</div>
+            <a href="../../index.html#home" class="navigation"><div>HOME</div></a>
+            <a href="../../index.html#event1" class="navigation"><div>EVENT1</div></a>
+            <a href="../../index.html#event2" class="navigation"><div>EVENT2</div></a>
+            <a href="../../index.html#club" class="navigation"><div>CLUBS</div></a>
+            <a href="../../index.html" class="navigation"><div class="registrebtn">REGISTRE</div></a>
+        </div>
+        <script>
+            function toggleMenu() {
+            var navbar = document.querySelector('.navbar');
+            navbar.classList.toggle('menu-open');
+            }
+        </script>
+
+
+
+
+
+
+
+
+
+
+
+
+        <!--Cover Section-->
+        <section class="section">
+            <div class="cover">
+                <img src="Media/CoverPic.png" alt="" style="width: 100%; height: 700px;">
+                <div class="arrow-container" id="arrowContainer">
+                    <div class="arrow"></div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!--Club Description-->
+        <section class="section">
+            <div class="main">
+                <div style="display: flex; justify-content: center; align-items: center; width: 100%;">
+                    <img src="Media/DarkLogo.png" alt="" class="logo">
+                </div>
+                <div class="txt">
+                    <h1>ABOUT US</h1>
+                    <p style="text-indent: 20px;">TUNSA is an abbreviation of the Tunisian Space Association. 
+                        The purpose of this association is to contribute to the advancement of astronomy in Tunisia. 
+                        In 2023, the association took the initiative to form clubs within universities Tunisia to facilitate access to this field for students.</p>
+                    <p style="text-indent: 20px;">
+                        Established on January 23, 2024, 
+                        the TUNSA ENSI Club serves as a vibrant hub where space enthusiasts converge to nurture their curiosity and fervor 
+                        for the cosmos. 
+                        Our core objective is to empower ENSI's students with practical experience and profound insights into space, 
+                        fostering Tunisia's progress in the global space arena. 	
+                        Committed to inclusivity and collaboration, 
+                        we aspire to create a welcoming environment where individuals from diverse backgrounds can immerse themselves in the captivating expanse of space, 
+                        driven by a shared passion to learn, explore, and exchange ideas.
+                    </p>
+                </div>
+                <h3>OUR BIGGEST EVENTS</h3>
+                <div class="numbers">
+                    <div class="num"> Unveiling the Mysteries of Astrophysic</div>
+                    <div class="num"> Tell Us Your Story </div>
+                    <div class="num">  Astro Projects Showcase</div>
+                </div>
+            </div>    
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!--Image Slider-->
+        <section class="section" >
+                <div class="glide">
+                    <div class="glide__track" data-glide-el="track" >
+                        <ul class="glide__slides" >
+                            <li class="glide__slide"><img src="Media/1.jpg" alt="Image 1"></li>
+                            <li class="glide__slide"><img src="Media/2.png" alt="Image 2"></li>
+                            <li class="glide__slide"><img src="Media/3.png" alt="Image 2"></li>
+                        </ul>
+                    </div>
+                </div>
+                <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+                <script src="../../Prefabs/slider.js"></script>
+        </section>
+        
+        <!--Footer Section-->
+        <section class="section" id="footer">
+            This is the footer content.
+        </section>
+    </div>
+
+
+    <!-- UP ARROW !! 
+    <div id="scrollToTop" onclick="scrollToTop()">↑</div>
+    <script>
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+    -->
+</body>
+</html>
