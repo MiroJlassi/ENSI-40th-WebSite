@@ -40,7 +40,7 @@ body, html{
 
 .cover{
     width: 100%;
-    height: 100%;
+    height: fit-c;
 }
 .covervideo {
     z-index: -1;
@@ -68,7 +68,6 @@ body, html{
     border-width: 0 10px 10px 0;
     transform: rotate(45deg);
     box-shadow: 0 0 50px rgba(0,0,0,1);
-
 }
 
 @keyframes bounce {
