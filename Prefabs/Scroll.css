@@ -14,10 +14,7 @@
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: #585858;
-
 }
-
-
 
 
 /* SLIDER */
@@ -30,11 +27,11 @@
     height: auto; /* Maintain aspect ratio */
     max-height: 600px;
     transition-duration: 0.3s;
-    margin-bottom: 300px;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 .glide__slide img:hover{
     box-shadow: 0 0 100px rgba(255, 255, 255, 0.1);
-
     transform: rotate(1deg);
     scale: 1.05;
 
@@ -43,8 +40,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
-
 }
 
 .glide__slide {

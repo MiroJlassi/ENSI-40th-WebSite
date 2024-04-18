@@ -2,44 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="Prefabs/navBar.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
     <link rel="stylesheet" href="Prefabs/Scroll.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">    
     <title>ENSI 40th ANNIVERSARY</title>
 </head>
 <body>
 
 
+    <div class="navbar">
+        <div style="width: 50%;"></div>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <a href="index.html#home" class="navigation"><div>ANNIV 40</div></a>
+        <a href="index.html#event1" class="navigation"><div>ENSI DAYS 18/19</div></a>
+        <a href="index.html#event2" class="navigation"><div>DAY 24</div></a>
+        <a href="index.html#club" class="navigation"><div>CLUBS AT A GALANCE</div></a>
+        <a href="COMING SOON/index.html" class="navigation"><div class="registrebtn">REGISTRE</div></a>
+    </div>
+    <script>
+        function toggleMenu() {
+        var navbar = document.querySelector('.navbar');
+        navbar.classList.toggle('menu-open');
+        }
+    </script>
+
     <div class="container">
-        <!-- NAV BAR-->
-        <!--<div class="navbar">
-            <link rel="stylesheet" href="Prefabs/navBar.css">
-            <div style="width: 50%;"> ENSI 40th ANNIVERSARY</div>
-            <a href="../../index.html" class="navigation"><div>HOME</div></a>
-            <a href="../../index.html" class="navigation"><div>EVENT 1</div></a>
-            <a href="../../index.html" class="navigation"><div>EVENT 2</div></a>
-            <a href="../../index.html" class="navigation"><div>CLUBS</div></a>
-            <div class="registrebtn">REGISTRE</div>
-        </div>-->
-
-        <div class="navbar">
-            <div style="width: 50%;"></div>
-            <div class="menu-icon" onclick="toggleMenu()">☰</div>
-            <a href="index.html#home" class="navigation"><div>HOME</div></a>
-            <a href="index.html#event1" class="navigation"><div>EVENT1</div></a>
-            <a href="index.html#event2" class="navigation"><div>EVENT2</div></a>
-            <a href="index.html#club" class="navigation"><div>CLUBS</div></a>
-            <a href="COMING SOON/index.html" class="navigation"><div class="registrebtn">REGISTRE</div></a>
-        </div>
-        <script>
-            function toggleMenu() {
-            var navbar = document.querySelector('.navbar');
-            navbar.classList.toggle('menu-open');
-            }
-        </script>
-
         <section class="section" id="top">
             <video autoplay muted loop class="covervideo">
                 <source src="Media/VAnglais FINALE.mp4" type="video/mp4">
@@ -50,7 +39,7 @@
         </section>
 
         <section class="section" id="home">
-            <div style="width: 100%;height: 100%; display: flex;">
+            <div style="width: 100%; display: flex;margin-top: 50px;">
                 <div class="txt">
                     <h1>ABOUT ENSI</h1>
                     <div style="height:2px; background-color: #747579; width: 60%;box-shadow: 0px 5px 5px rgba(0,0,0,0.2);"></div>
@@ -77,8 +66,15 @@
             </div>
         </section>
 
+        <div style="width: 100%;display: flex; justify-content: center; align-items: center;pad: 5% 0px; margin-bottom: 100px;">
+            <div class="btn">
+                <a href="https://ensi.rnu.tn/">VISIT ENSI OFFICIAL WEBSITE</a>
+            </div>
+        </div>
+
+
         <section class="section">
-            <div style="width: 100%;height: 100%; display: flex;justify-content: center; align-items: center;flex-direction: column;">
+            <div style="width: 100%; display: flex;justify-content: center; align-items: center;flex-direction: column;">
                 <h1 style="text-align: center;">ENSI delivers the following NATIONAL DIPLOMA</h1>
                 <div style="height:2px; background-color: #747579; width: 60%;margin-bottom: 30px;box-shadow: 0px 5px 5px rgba(0,0,0,0.2);"></div>
                 <div>
@@ -102,8 +98,8 @@
         </section>
 
         <section class="section">
-            <div style="width: 100%;height: 100%; display: flex; align-items: center;flex-direction: column; text-align: center;">
-                <h1 style="margin-top: 17%;">ENSI 40 YEARS OF EXCELLENCE</h1>
+            <div style="width: 100%; display: flex; align-items: center;flex-direction: column; text-align: center;padding: 5% 0%;">
+                <h1>ENSI 40 YEARS OF EXCELLENCE</h1>
                 <div style="height:2px; background-color: #747579; width: 60%;margin-bottom: 10px;box-shadow: 0px 5px 5px rgba(0,0,0,0.2);"> </div>
                 <p>Since its establishment in 1984, ENSI has achieved remarkable milestones:</p>
                 <div class="stats">
@@ -136,9 +132,9 @@
 
 
         <section class="section">
-            <div style="width: 100%;height: 100%; display: flex;justify-content: center; align-items: center;flex-direction: column;">
+            <div style="width: 100%;height: 100%; display: flex;justify-content: center; align-items: center;flex-direction: column; padding: 5% 0;">
                 <h1 style="text-align: center;">ENSI holds a Research and Innovation Center including</h1>
-                <div style="height:2px; background-color: #747579; width: 60%;margin-bottom: 10px;box-shadow: 0px 5px 5px rgba(0,0,0,0.2);"></div>
+                <div style="height:2px; background-color: #747579; width: 60%;margin-bottom:3px;box-shadow: 0px 5px 5px rgba(0,0,0,0.2);"></div>
                 
                 <div class="centrecontainer">
                     <div class="centre-card">
@@ -154,7 +150,7 @@
 
 
                     <div class="centre-card">
-                        <div class="centrename" style="background-color: white;"><img src="https://firebasestorage.googleapis.com/v0/b/ensi-40-resources.appspot.com/o/MEDIA%2FCRISTAL.png?alt=media&token=eb057dcf-e0b6-435e-8f37-e387fb404370" alt="" style="height: 100%;width: 100%;"></div>
+                        <div class="centrename" style="background-color: white;"><img src="https://firebasestorage.googleapis.com/v0/b/ensi-40-resources.appspot.com/o/MEDIA%2FCRISTAL.png?alt=media&token=eb057dcf-e0b6-435e-8f37-e387fb404370" alt="" style="height: 100%;width: 100%;background-color: white;"></div>
                         <div class="centretext">
                             <h3>LABO CRISTAL</h3>
                             <div style="height:2px; background-color: #747579; width: 60%;margin-bottom: 30px;box-shadow: 0px 5px 5px rgba(0,0,0,0.2);"></div>
@@ -164,12 +160,11 @@
                         <div class="readmorecentre" onclick="openLinkInNewTabCristal()"><h3>READ MORE</h3></div>
                     </div>
             </div>
-            <div style="height:2px; background-color: #747579; width: 60%;margin-bottom: 30px;box-shadow: 0px 5px 5px rgba(0,0,0,0.2);"></div>
-
         </section>
 
+
         <section class="section" id="event1">
-            <div style="width: 100%;height: 100%; display: flex;justify-content: center; align-items: center;flex-direction: column;">
+            <div style="width: 100%;height: 100%; display: flex;justify-content: center; align-items: center;flex-direction: column;padding: 5% 0;">
                 <h2 style="text-align: center;">ENSI Research & Innovation Days <br>18 & 19 April 2024</h2>
                 <div style="height:2px; background-color: #747579; width: 60%;margin-bottom: 30px;    box-shadow: 0px 5px 5px rgba(0,0,0,0.2);"> </div>
                 <p style="text-indent: 20px;width: 80%; text-align: justify;font-size: 80%;">
@@ -196,24 +191,23 @@
                     historical and pioneering role of ENSI in Teaching and Research of Artificial Intelligence since its
                     foundation in 1984.
                 </p>
-                <div class="btn">
-                    <a href="Downloadables/Program event 1.pdf" download="pogram_event_1">DOWNLOAD PROGRAM</a>
+                <div style="display: flex;justify-content: space-around; width: 70%;">
+                    <div class="btn" style="width: 30%;">
+                        <a href="Downloadables/Program event 1.pdf" download="pogram_event_1">DOWNLOAD PROGRAM</a>
+                    </div>
+                    <div style="width: 10px;"></div>
+                    <div class="btn" style="width: 30%;">
+                        <a href="https://sites.google.com/ensi-uma.tn/ensi-days/home?authuser=0">VISIT EVENT WEBSITE</a>
+                    </div>
                 </div>
+
             </div>
         </section>
 
-        <!--
-        <section class="section" id="event2">
-            <img src="https://firebasestorage.googleapis.com/v0/b/ensi-40-resources.appspot.com/o/MEDIA%2FCover%20pic.png?alt=media&token=f7f89631-d3db-43fd-b39b-62a3fe29be9d" alt="" style="width: 100%;height: 700px;    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);">
-            <div class="arrow-container" id="arrowContainer">
-                <div class="arrow"></div>
-            </div>
-        </section>
-    -->
 
-        
-        <section class="section" id="event2">
-            <div style="width: 100%;height: 100%; display: flex;justify-content: center; align-items: center;flex-direction: column; text-align: center;">
+
+        <section class="section" id="event2" >
+            <div style="width: 100%;height: 100%; display: flex;justify-content: center; align-items: center;flex-direction: column; text-align: center;padding: 5% 0px;">
                 <!--<h1>EVENT 2 ENSI 24</h1>-->
                 <!--HOME PAGE SEIF !!-->
                 <!--<div class="arrow-container" id="arrowContainer" style="margin: 10px 0px;">
@@ -249,7 +243,7 @@
         </section>
 
         <section class="section">
-            <div style="width: 100%;height: 100%; display: flex;justify-content: center; align-items: center;flex-direction: column; text-align: center;">
+            <div style="width: 100%;height: 100%; display: flex;justify-content: center; align-items: center;flex-direction: column; text-align: center;padding: 5% 0px;">
                 <h1>ABOUT EVENT + SCHEDULE</h1>
                 <div style="height:2px; background-color: #747579; width: 60%;margin-bottom: 30px;    box-shadow: 0px 5px 5px rgba(0,0,0,0.2);"> </div>
                 <p>COMING SOON</p>
@@ -257,114 +251,96 @@
         </section>
 
         <section class="section">
-            <div style="width: 100%;height: 100%; display: flex;justify-content: center; align-items: center;flex-direction: column; text-align: center;">
+            <div style="width: 100%;height: 100%; display: flex;justify-content: center; align-items: center;flex-direction: column; text-align: center;padding: 5% 0px;">
                 <h1>ACTIVITIES: Workshops/competitions</h1>
                 <div style="height:2px; background-color: #747579; width: 60%;margin-bottom: 30px;    box-shadow: 0px 5px 5px rgba(0,0,0,0.2);"> </div>
                 <p>COMING SOON</p>
             </div>
         </section>
 
-
-        
-
         <section class="section">
-            <div style="width: 100%;height: 100%; display: flex;justify-content: center; align-items: center;flex-direction: column; text-align: center;">
+            <div style="width: 100%;height: 100%; display: flex;justify-content: center; align-items: center;flex-direction: column; text-align: center;padding: 5% 0px;">
                 <h1>ALUMNI</h1>
                 <div style="height:2px; background-color: #747579; width: 60%;margin-bottom: 30px;    box-shadow: 0px 5px 5px rgba(0,0,0,0.2);"> </div>
-                <p>COMING SOON</p>
+                <p>VIDEO COMING SOON</p>
             </div>
         </section>
 
-        <section class="section" id="club">
-            <div style="padding-top:20px ; width: 100%;height: 100%; display: flex;justify-content: center; align-items: center;flex-direction: column; text-align: center;">
-                <h1>MEET OUR CLUBS</h1>
-                <div style="height:2px; background-color: #747579; width: 60%;margin-bottom: 30px;    box-shadow: 0px 5px 5px rgba(0,0,0,0.2);"> </div>
 
+        <section class="section" id="club">
+            <div style="padding:5% 0 ; width: 100%;height: 100%; display: flex;justify-content: center; align-items: center;flex-direction: column; text-align: center;">
+                <h1>MEET OUR CLUBS</h1>
+                <div style="height:2px; background-color: #747579; width: 60%;margin-bottom: 30px;box-shadow: 0px 5px 5px rgba(0,0,0,0.2);"> </div>
                 <!-- Club Grid : Hadil !!-->
                 <div class="big">
-
-            
                         <article class="hcard">
                             <img  class="hcard-back"  src="Media/LOGO/chess.jpg" >
                             <div class="hcard-content">
-                                <a href="COMING SOON/index.html"><h2 class="hchange">Show More</h2></a>
+                                <a href="Clubs/CHESS/index.html"><h2 class="hchange">Show More</h2></a>
                             </div>
                         </article>
-            
                         <article class="hcard">
                             <img  class="hcard-back"  src="Media/LOGO/hapiness.jpg" >
                             <div class="hcard-content">
-                                <a href="COMING SOON/index.html"><h2 class="hchange">Show More</h2></a>
+                                <a href="Clubs/HAPPINESS/index.html"><h2 class="hchange">Show More</h2></a>
                             </div>
                         </article>
-            
                         <article class="hcard">
                             <img  class="hcard-back"  src="Media/LOGO/junior.jpg" >
                             <div class="hcard-content">
-                                <a href="COMING SOON/index.html"><h2 class="hchange">Show More</h2></a>
+                                <a href="Clubs/JUNIOR/index.html"><h2 class="hchange">Show More</h2></a>
                             </div>
                         </article>
-            
                         <article class="hcard">
                             <img  class="hcard-back"  src="Media/LOGO/ecpc.jpg"  >
                             <div class="hcard-content">
-                                <a href="COMING SOON/index.html"><h2 class="hchange">Show More</h2></a>
+                                <a href="Clubs/ECPC/index.html"><h2 class="hchange">Show More</h2></a>
                             </div>
                         </article>
-            
                         <article class="hcard">
                             <img  class="hcard-back"  src="Media/LOGO/enactus.jpg"  >
                             <div class="hcard-content">
-                                <a href="COMING SOON/index.html"><h2 class="hchange">Show More</h2></a>
+                                <a href="Clubs/ENCATUS/index.html"><h2 class="hchange">Show More</h2></a>
                             </div>
                         </article>
-            
                 <!---->
-            
                         <article class="hcard">
-                            <img  class="hcard-back"  src="Media/LOGO/coart.jpg"  >
+                            <img  class="hcard-back"  src="https://firebasestorage.googleapis.com/v0/b/ensi-40-resources.appspot.com/o/COART%2Flogo%20(1).jpg?alt=media&token=209f173f-0cc5-4c2d-9608-8e8874c1d553"  >
                             <div class="hcard-content">
                                 <a href="Clubs/CO'ART/index.html"><h2 class="hchange2">Show More</h2></a>
                             </div>
                         </article>
-            
                         <article class="hcard">
                             <img  class="hcard-back"  src="Media/LOGO/cps.jpg" >
                             <div class="hcard-content">
-                                <a href="COMING SOON/index.html"><h2 class="hchange2">Show More</h2></a>
+                                <a href="Clubs/CPS/index.html"><h2 class="hchange2">Show More</h2></a>
                             </div>
                         </article>
-            
                         <article class="hcard">
-                            <img  class="hcard-back"  src="Media/LOGO/ieee.jpg"  >
+                            <img  class="hcard-back"  src="https://firebasestorage.googleapis.com/v0/b/ensi-40-resources.appspot.com/o/IEEE%2Flogo.png?alt=media&token=56b2e340-a9ec-4b79-9b3e-da13d8f6bd4d"  >
                             <div class="hcard-content">
                                 <a href="Clubs/IEEE/index.html" ><h2 class="hchange2">Show More</h2></a>
                             </div>
                         </article>
-            
                         <article class="hcard">
                             <img  class="hcard-back"  src="Media/LOGO/music.jpg"  >
                             <div class="hcard-content">
-                                <a href="COMING SOON/index.html"><h2 class="hchange2">Show More</h2></a>
+                                <a href="Clubs/MUSIC/index.html"><h2 class="hchange2">Show More</h2></a>
                             </div>
                         </article>
-            
                         <article class="hcard">
                             <img  class="hcard-back"  src="Media/LOGO/ossec.jpg"  >
                             <div class="hcard-content">
                                 <a href="COMING SOON/index.html"><h2 class="hchange2">Show More</h2></a>
                             </div>
                         </article>
-            
                     <!---->
-            
                         <article class="hcard">
                             <img  class="hcard-back"  src="Media/LOGO/are.jpg"  >
                             <div class="hcard-content">
                                 <a href="COMING SOON/index.html"><h2 class="hchange">Show More</h2></a>
                             </div>
                         </article>
-                        
                         <article class="hcard">
                             <img  class="hcard-back"  src="Media/LOGO/tunsa.jpg"  >
                             <div class="hcard-content">
@@ -373,53 +349,52 @@
                         </article>
                     <!---->
                 </div> 
-                <div class="btn">
+                <div class="btn" style="margin-top: 50px;">
                     <a href="Downloadables/Catalogue Club.pdf" download="Club_Catalogue">DOWNLOAD CLUB CATALOG</a>
                 </div>
+
+                <div style="height:2px; background-color: #747579; width: 60%;margin: 30px 100px 0px 100px;box-shadow: 0px 5px 5px rgba(0,0,0,0.2);"> </div>
+
             </div>
-        </section>
 
-
-
-        <!-- FOOTER INES-->
-        <section class="section">
-            <div style="width: 100%;height: 100%; display: flex;justify-content: end; align-items: end;flex-direction: column; text-align: center;">
-                <h1 style="font-weight: bolder;font-size: 50px;box-shadow: 0px 5px 5px rgba(0,0,0,0.2);">THANK YOU ❤️</h1>
-                <div style="width: 99.6%;height: 40%;display: flex;justify-content: center;align-items: center;flex-direction: column;background-color:#3C3E44; border-radius: 10px 10px 0px 0px;box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.2);">
-                    <div style="display: flex; justify-content: space-around; align-items: center;width: 100%;">
-                        <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;width: 30%;height: 70%; border-right: 2px solid #747579;padding-right: 5px;">
-                            <a href="https://ensi.rnu.tn/"><img src="https://firebasestorage.googleapis.com/v0/b/ensi-40-resources.appspot.com/o/MEDIA%2FLOGO%20vect.png?alt=media&token=baa2d839-638c-4ab0-ad18-c8ac2ddaacd4" alt="" width="100px">
-                            </a>E N S I
+                <!-- FOOTER INES-->
+                <section class="section">
+                    <div style="width: 100%;height: 800px; display: flex;justify-content: end; align-items: end;flex-direction: column; text-align: center;margin-top: 100px;">
+                        <h1 style="font-weight: bolder;font-size: 50px;box-shadow: 0px 5px 5px rgba(0,0,0,0.2);">THANK YOU ❤️</h1>
+                        <div style="width: 99.6%;height: 40%;display: flex;justify-content: center;align-items: center;flex-direction: column;background-color:#3C3E44; border-radius: 10px 10px 0px 0px;box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.2);">
+                            <div style="display: flex; justify-content: space-around; align-items: center;width: 100%;">
+                                <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;width: 30%;height: 70%; border-right: 2px solid #747579;padding-right: 5px;">
+                                    <a href="https://ensi.rnu.tn/"><img src="https://firebasestorage.googleapis.com/v0/b/ensi-40-resources.appspot.com/o/MEDIA%2FLOGO%20vect.png?alt=media&token=baa2d839-638c-4ab0-ad18-c8ac2ddaacd4" alt="" width="100px">
+                                    </a>E N S I
+                                </div>
+                                <div style="width: 60%; height: 100%;text-align: left;">
+                                    <h1>CONTACT US</h1>
+                                    <p style="text-indent: 20px;">Tel : 71 600 444</p>
+                                    <p style="text-indent: 20px;">Fax : 71 600 449</p>
+                                    <p style="text-indent: 20px;">Email : webmaster@ensi.rnu.tn</p>
+                                </div>
+                                <!--
+                                <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;width: 30%;height: 70%;">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3194.19888244034!2d10.061185611451046!3d36.813753866819624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12fd2d96d4a9d6c9%3A0xbbe38a2694938acf!2s%C3%89cole%20Nationale%20des%20Sciences%20de%20l&#39;Informatique!5e0!3m2!1sfr!2stn!4v1712164131960!5m2!1sfr!2stn" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"referrerpolicy="no-referrer-when-downgrade" class="locimg"></iframe>
+                                    Campus Universitaire de la Manouba - 2010 Tunisie
+                                </div>-->
+                            </div>
+                            <div style="height:2px; background-color: #747579; width: 100%;margin: 10px 0px;box-shadow: 0px 5px 5px rgba(0,0,0,0.2);"> </div>
+                            <div style="width: 80%;height: 40px;display: flex; justify-content: space-between;align-items: center;">
+                                <div>
+                                    © copyright 2014 | ALL RIGHTS RESERVED
+                                </div>
+                                <div style="display: flex; opacity: 50%;">
+                                    <a href="https://www.facebook.com/profile.php?id=100085598258430"><img src="https://firebasestorage.googleapis.com/v0/b/ensi-40-resources.appspot.com/o/SOCIAL%20LOGO%2Ffacebook.png?alt=media&token=fa3522f4-2161-49d0-ac55-c44ad7474d36" alt="" style="width: 30px;border-radius: 20px;">
+                                    </a>
+                                    <a href="https://www.linkedin.com/school/ensitn/">
+                                    <img src="https://firebasestorage.googleapis.com/v0/b/ensi-40-resources.appspot.com/o/SOCIAL%20LOGO%2Flinkedin.png?alt=media&token=a32267ef-4999-4cfc-b33c-15481f1d7071" alt="" style="width: 30px; margin-left: 10px;">
+                                    </a>
+                                </div>
+                            </div>
                         </div>
-                        <div style="width: 60%; height: 100%;text-align: left;">
-                            <h1>CONTACT US</h1>
-                            <p style="text-indent: 20px;">Tel : 71 600 444</p>
-                            <p style="text-indent: 20px;">Fax : 71 600 449</p>
-                            <p style="text-indent: 20px;">Email : webmaster@ensi.rnu.tn</p>
-                        </div>
-                        <!--
-                        <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;width: 30%;height: 70%;">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3194.19888244034!2d10.061185611451046!3d36.813753866819624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12fd2d96d4a9d6c9%3A0xbbe38a2694938acf!2s%C3%89cole%20Nationale%20des%20Sciences%20de%20l&#39;Informatique!5e0!3m2!1sfr!2stn!4v1712164131960!5m2!1sfr!2stn" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"referrerpolicy="no-referrer-when-downgrade" class="locimg"></iframe>
-                            Campus Universitaire de la Manouba - 2010 Tunisie
-                        </div>-->
                     </div>
-                    <div style="height:2px; background-color: #747579; width: 100%;margin: 10px 0px;box-shadow: 0px 5px 5px rgba(0,0,0,0.2);"> </div>
-                    <div style="width: 80%;height: 40px;display: flex; justify-content: space-between;align-items: center;">
-                        <div>
-                            © copyright 2014 | ALL RIGHTS RESERVED
-                        </div>
-                        <div style="display: flex; opacity: 50%;">
-                            <a href="https://www.facebook.com/profile.php?id=100085598258430"><img src="https://firebasestorage.googleapis.com/v0/b/ensi-40-resources.appspot.com/o/SOCIAL%20LOGO%2Ffacebook.png?alt=media&token=fa3522f4-2161-49d0-ac55-c44ad7474d36" alt="" style="width: 30px;border-radius: 20px;">
-                            </a>
-                            <a href="https://www.linkedin.com/school/ensitn/">
-                            <img src="https://firebasestorage.googleapis.com/v0/b/ensi-40-resources.appspot.com/o/SOCIAL%20LOGO%2Flinkedin.png?alt=media&token=a32267ef-4999-4cfc-b33c-15481f1d7071" alt="" style="width: 30px; margin-left: 10px;">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <a href="index.html#top" style="text-decoration: none; position: fixed; bottom: 10px; right: 20px; width: 40px; height: 40px; background-color: #00C2FF; border-radius: 50%;text-align: center;display: flex;align-items: center;justify-content: center;opacity: 0.5;">↑</a>
+                <a href="index.html#top" style="text-decoration: none; position: fixed; bottom: 10px; right: 20px; width: 40px; height: 40px; background-color: #00C2FF; border-radius: 50%;text-align: center;display: flex;align-items: center;justify-content: center;opacity: 0.5;">↑</a>
+    </div>
 </body>
 </html>

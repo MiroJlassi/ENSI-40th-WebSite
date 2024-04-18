@@ -2,38 +2,16 @@ body, html{
     margin: 0;
     padding: 0;
     font-family: Inter;
-    scroll-behavior: smooth;
     background-color: #2B2D34;
     color: white;
 }
 .container{
-    height: 100vh;
-    overflow-y: scroll ;
-    scroll-snap-type: y mandatory;
+    width: 100%;
 }
   
 .section{
-    margin-top:100px ;
-    height: 100vh;
     width: 100%;
-    scroll-snap-align: start;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* Section 1 Cover video it can be cover image ! */
@@ -80,19 +58,6 @@ body, html{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* section 2 brief Club details */
 .main{
     width: 100%;
@@ -100,7 +65,6 @@ body, html{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding-top: 50px;
     cursor:default;
 }
 
@@ -144,6 +108,7 @@ body, html{
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     transition-duration: 0.3s;
     font-weight: bold;
    
@@ -154,57 +119,6 @@ body, html{
     color:#2B2D34;
 }
 
-
-
-
-
-
-
-/*Section 3 Image Slider*/
-.glide__slide img {
-    border-radius: 22px;
-    width: 70%; /* Make the image fill the width of its container */
-    max-width: 1000px; /* Ensure the image doesn't exceed its original size */
-    height: auto; /* Maintain aspect ratio */
-    max-height: 600px;
-    transition-duration: 0.3s;
-    margin-bottom: 300px;
-}
-.glide__slide img:hover{
-    transform: rotate(1deg);
-    scale: 1.05;
-    box-shadow: 0 0 50px rgba(0,0,0,1);
-
-}
-.glide__slides {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-
-}
-
-.glide__slide {
-    text-align: center;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*Section 4 Introduction Video */
 #vid{
     display: flex;
@@ -214,70 +128,8 @@ body, html{
 
 .teaser{
     width: 100%;
-    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
-
-
-
-
-
-
-
-
-
-
-
-/* Section 4 Footer Contact details */
-
-#footer{
-    display: flex;
-    align-items: end;
-}
-
-
-
-
-
-
-
-
-
-
-/* UP arrow is not functional !! */
-/*
-#scrollToTop {
-    position: fixed;
-    bottom: 20px;
-    right: 50%;
-    background-color: #00c3ff26;
-    color: #fff;
-    width: 40px;
-    height: 40px;
-    text-align: center;
-    line-height: 40px;
-    font-size: 24px;
-    cursor: pointer;
-    border-radius: 50%;
-    z-index: 9999;
-    transition-duration: 0.2s;
-}
-
-#scrollToTop:hover {
-    background-color: #00c3ff;
-} */
-
-.footer{
-    width: 100%;
-    height: 50%;
-    background-color: #3C3E44;
-    border-radius: 10px 10px 0px 0px;
-    box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.2);
-    position: relative;
-    padding: 20px 100px 20px 100px;
-}
-
-

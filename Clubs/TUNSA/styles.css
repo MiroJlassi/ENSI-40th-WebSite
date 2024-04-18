@@ -2,21 +2,16 @@ body, html{
     margin: 0;
     padding: 0;
     font-family: Inter;
-    scroll-behavior: smooth;
     background-color: #2B2D34;
     color: white;
 }
 .container{
-    height: 100vh;
-    overflow-y: scroll ;
-    scroll-snap-type: y mandatory;
+    width: 100%;
 }
   
 .section{
-    margin-top:100px ;
-    height: 100vh;
+
     width: 100%;
-    scroll-snap-align: start;
 }
 
 
@@ -40,7 +35,6 @@ body, html{
 
 .cover{
     width: 100%;
-    height: fit-c;
 }
 .covervideo {
     z-index: -1;
@@ -150,6 +144,8 @@ body, html{
     align-items: center;
     transition-duration: 0.3s;
     font-weight: bold;
+    text-align: center;
+    font-size: 80%;
    
 }
 
@@ -164,33 +160,6 @@ body, html{
 
 
 
-
-/*Section 3 Image Slider*/
-.glide__slide img {
-    border-radius: 22px;
-    margin-top: 100px;
-    height: 600px;
-    transition-duration: 0.3s;
-}
-.glide__slide img:hover{
-    transform: rotate(1deg);
-    scale: 1.05;
-    box-shadow: 0 0 50px rgba(0,0,0,1);
-    margin-bottom: 300px;
-
-}
-.glide__slides {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-
-}
-
-.glide__slide {
-    text-align: center;
- 
-}
 
 /*Section 4 Introduction Video */
 #vid{

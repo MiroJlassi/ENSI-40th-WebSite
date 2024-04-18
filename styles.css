@@ -2,38 +2,26 @@ body, html{
     margin: 0;
     padding: 0;
     font-family: Inter;
-    scroll-behavior: smooth;
     background-color: #2B2D34;
     color: white;
 }
+
 .container{
-    height: 100vh;
-    overflow-y: scroll ;
-    scroll-snap-type: y mandatory;
-}
-  
-.section{
-    margin-top:100px ;
-    height: 100vh;
     width: 100%;
-    scroll-snap-align: start;
 }
 
-
-
-
+section{
+    width: 100%;
+}
 
 
 /* section 1*/
-
 .covervideo {
     z-index: -1;
-    max-height: 700px;
+    height: auto;
     width: 100%;
-    object-fit: fill;
     box-shadow: 0 0 50px rgba(0,0,0,1);
 }
-
 .arrow-container {
     width: 100%;
     display: flex;
@@ -43,7 +31,6 @@ body, html{
     opacity: 1;
     transition: opacity 1s;
 }
-
 .arrow {
     width: 50px;
     height: 50px;
@@ -54,7 +41,6 @@ body, html{
     box-shadow: 0 0 50px rgba(0,0,0,1);
 
 }
-
 @keyframes bounce {
     0%, 20%, 50%, 80%, 100% {
         transform: translateY(0);
@@ -68,16 +54,19 @@ body, html{
 }
 
 
+/* section 2 */
 .txt{
     min-width: 300px;
     width: 100%;
-    height: 100%;
-    padding: 3% 10% 0 10%;
+    padding: 7% 10% 5% 10%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
+
+
+/*section 3*/
 
 .dip{
     text-align: center;
@@ -100,215 +89,7 @@ body, html{
     scale: 0.98;
 }
 
-
-/*centres*/
-.centrecontainer{
-    position: relative;
-    max-width: 1000px;
-    width: 90%;
-    height: 50%;
-    display: flex;
-    flex-direction:column;
-    justify-content: center;
-    align-items: center;
-}
-
-.centre-card{
-    width: 80%;
-    height: 30%;
-    background-color: rgba(255, 255, 255, 0.211);
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.01);
-    margin: 10px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    transition: all 0.3s ease-in-out;
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
-}
-
-
-.centrename{
-    background-color: white;
-    height: 100%;
-    width: 30%;
-    max-width: 100px;
-    margin-right: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-right: 2px solid rgba(255, 255, 255, 0.341) ;
-    transition-duration: 0.3s;
-}
-
-
-.centretext{
-    width: 70%;
-    font-size: 75%;
-    height: 100%;
-    padding: 3px;
-    text-align: left;
-}
-
-
-.readmorecentre{
-    height: 200%;
-    width: 35%;
-    /*background-color:#585858 ;*/
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size:50%;
-    left: 30%;
-    transition: all 0.3s ease;
-    transition-delay: 0.3s;
-    background-color: #00C2FF;
-}
-
-
-
-.centre-card:hover .centrename{
-    color:#00C2FF;
-    max-width: 200px;
-}
-
-.centre-card:hover {
-    width: 100%;
-    height: 40%;
-    border: #00C2FF solid 5px;
-    color: white;
-    box-shadow: 0 4px 20px rgba(0, 162, 255, 0.2);
-}
-
-.centre-card:hover .readmorecentre{
-    transform: translateX(-100%);
-}
-
-
-.hiddentxt{
-    display: none;
-    text-align: justify;
-    transition: all 1s ease-in;
-    transition-delay: 3s; 
-}
-
-.centre-card:hover .hiddentxt{
-    display: inline-block;
-}
-
-/************************************************************************************/
-
-.card {
-    width: 200px;
-    height: 150px;
-    background-color: rgba(255, 255, 255, 0.211);
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.01);
-    padding: 20px;
-    margin: 10px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease-in-out;
-    cursor: pointer;
-}
-.card:hover {
-    transform: scale(1.1);
-    background-color: #00C2FF;
-    color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-.description {
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.8);
-    color: #fff;
-    transition: all 0.3s ease-in-out;
-    z-index: 1;
-    opacity: 0;
-    transform: translateY(100%);
-}
-.card:hover .description {
-    opacity: 1;
-    transform: translateY(0%);
-}
-
-
-.btn {
-    background-color: #00C2FF;
-    padding: 0px 50px;
-    height: 70px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition-duration: 0.3s;
-    cursor: pointer;
-}
-
-.btn:hover{
-    background-color: #fff;
-    color: #00C2FF;
-}
-
-
-/* ************************* SEIF :: COUNTDOWN :: ************************************ */
-
-.slogan40ENSI{
-    width: 100%;
-    height: 5%;
-    font-size: 150%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.slogan40ENSI span{
-    color: #00C2FF;
-}
-
-.countdown{
-    height: 150px;
-    width: 90%;
-    display: flex;
-    justify-content: space-around;
-    border-radius: 20px;
-}
-
-.countdown div{
-    height: 100%;
-    width: 25%;
-}
-
-.countdown div p{
-    font-size: 300%;
-    margin-bottom: 10%;
-}
-.countdown div span{
-    width: 100%;
-    height: 100%;
-}
-/************************************************************************/
-
-
-.locimg{
-    width: 250px;
-    height: 200px;
-    object-fit: block;
-    border-radius: 22px;
-}
-
-
-
-
+/*Stats section 4*/
 .stats {
     display: flex;
     justify-content: space-around;
@@ -350,7 +131,158 @@ body, html{
     margin: 0;
 }
 
+.btn {
+    background-color: #00C2FF;
+    text-align: center;
+    height: 50px;
+    padding: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition-duration: 0.3s;
+    cursor: pointer;
+    font-size: 80%;
+}
 
+.btn:hover{
+    background-color: #fff;
+    color: #00C2FF;
+}
+
+/*centres*/
+.centrecontainer{
+    position: relative;
+    max-width: 1000px;
+    width: 90%;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+
+.centre-card{
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.211);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.01);
+    margin: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    border: none solid 3px;
+}
+
+
+.centrename{
+    background-color: white;
+    height: 100%;
+    width: 30%;
+    max-width: 100px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 2px solid rgba(255, 255, 255, 0.341) ;
+    transition-duration: 0.3s;
+}
+
+
+.centretext{
+    width: 70%;
+    font-size: 75%;
+    height: 100%;
+    padding: 3px;
+    text-align: left;
+}
+
+
+.readmorecentre{
+    height: 100%;
+    width: 35%;
+    /*background-color:#585858 ;*/
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:50%;
+    left: 30%;
+    transition: all 0.3s ease;
+    transition-delay: 0.3s;
+    background-color: #00C2FF;
+}
+
+
+
+.centre-card:hover .centrename{
+    color:#00C2FF;
+    max-width: 200px;
+
+}
+
+.centre-card:hover {
+    border: #00C2FF solid 3px;
+    color: white;
+    box-shadow: 0 4px 20px rgba(0, 162, 255, 0.2);
+}
+
+.centre-card:hover .readmorecentre{
+    transform: translateX(-100%);
+}
+
+
+.hiddentxt{
+    display: none;
+    text-align: justify;
+    transition: all 1s ease-in;
+    transition-delay: 3s; 
+}
+
+.centre-card:hover .hiddentxt{
+    display: inline-block;
+}
+
+
+/* ************************* SEIF :: COUNTDOWN :: ************************************ */
+
+.slogan40ENSI{
+    width: 100%;
+    font-size: 150%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slogan40ENSI span{
+    color: #00C2FF;
+}
+
+.countdown{
+    height: 150px;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 20px;
+}
+
+.countdown div{
+    width: 25%;
+}
+
+.countdown div p{
+    font-size: 300%;
+    margin-bottom: 10%;
+}
+.countdown div span{
+    width: 100%;
+    height: 100%;
+}
+/************************************************************************/
 
 /* HADIL */
 .big{
@@ -360,7 +292,6 @@ body, html{
     justify-content: center;
     align-items: center;
     max-width: 700px;
-    height: 60%;
 }
 
 .hcard{
@@ -368,7 +299,7 @@ body, html{
     width: 30%;
     min-width: 100px;
     height: 120px;
-    margin: -5px 5px;
+    margin: 10px;
     overflow: hidden;
     border-radius: 5px;
     background-color: black;
@@ -438,3 +369,5 @@ a{
     box-shadow: 2px 6px 12px rgba(0, 0, 0, 0.2);
 }
 /* -------- */
+
+
