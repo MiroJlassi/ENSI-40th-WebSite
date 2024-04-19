@@ -392,33 +392,33 @@ body, html{
 }
 
 .hcard-content {
-    width: inherit;
-    height: inherit;
-    font-weight: 100px;
+    width: 120px;
+    height: 120px;
+   
     transform: translateY(20%);
     text-align: center;
     opacity: 0;
     transition: transform 500ms ease-out, opacity 500ms ease-out;
+    padding:auto 5px;
 
-    display: flex;
+   /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;*/
 
     transition-duration: 0.3s;
 }
 a{
     text-decoration: none;
 }
-/*.hcard-content h2{
-    margin-top: 30px;
-    padding-top: 20px;
-    font-weight: 400;
-    font-style: normal;
-}*/
+
 .hchange{
+        
+  
     color:#00c2ff;
 }
 .hchange2{
+        
+   
     color: #3c3e44;
 }
 
@@ -429,7 +429,7 @@ a{
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
+    padding-bottom: 5px;
 }
 
 .hcard:hover{
