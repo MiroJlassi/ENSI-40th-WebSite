@@ -6,34 +6,25 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter"> <!--google fonts-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css"> <!--lib for the slider-->
-    <link rel="stylesheet" href="../../Prefabs/Scroll.css">
+    <link rel="stylesheet" href="../../Prefabs/Scroll.css"> <!--scroll-->
     <title>OSSEC</title>
 </head>
 <body>
+
     <div class="container">
 
-
-
-
-
         <div id="top"></div><a href="index.html#top" style="z-index: 100; text-decoration: none; position: fixed; bottom: 10px; right: 20px; width: 40px; height: 40px; background-color: #00C2FF; border-radius: 50%;text-align: center;display: flex;align-items: center;justify-content: center;opacity: 0.5;">↑</a>
-
-
-
-
-
-
 
         <!--NAV BAR-->
         <div class="navbar">
             <link rel="stylesheet" href="../../Prefabs/navBar.css">
             <div style="width: 50%;"></div>
             <div class="menu-icon" onclick="toggleMenu()">☰</div>
-            <a href="../../index.html#home" class="navigation"><div>HOME</div></a>
-            <a href="../../index.html#event1" class="navigation"><div>EVENT1</div></a>
-            <a href="../../index.html#event2" class="navigation"><div>EVENT2</div></a>
-            <a href="../../index.html#club" class="navigation"><div>CLUBS</div></a>
-            <a href="../../index.html" class="navigation"><div class="registrebtn">REGISTRE</div></a>
+            <a href="../../index.html#home" class="navigation"><div>ANNIV 40</div></a>
+            <a href="../../index.html#event1" class="navigation"><div>ENSI DAYS 18/19</div></a>
+            <a href="../../index.html#event2" class="navigation"><div>DAY 24</div></a>
+            <a href="../../index.html#club" class="navigation"><div>CLUBS AT A GALANCE</div></a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSf-sjAL8tjIoaSbSLIw2NkX2fttlA2JdD2rDPQvhAxLbWpsYg/viewform?usp=sf_link" class="navigation"><div class="registrebtn">REGISTER</div></a>
         </div>
         <script>
             function toggleMenu() {
@@ -41,104 +32,59 @@
             navbar.classList.toggle('menu-open');
             }
         </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
         <!--Cover Section-->
         <section class="section">
-            <div class="cover">
-                <img src="media/cov.png" alt="" style="width: 100%; height:100%;margin-bottom: -100px; ;">
-                <div class="arrow-container" id="arrowContainer">
-                    <div class="arrow"></div>
-                </div>
+            <img src="media/cov.png" class="covervideo" >
+            <div class="arrow-container" id="arrowContainer">
+                <div class="arrow"></div>
             </div>
         </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
         <!--Club Description-->
         <section class="section">
             <div class="main">
                 <div style="display: flex; justify-content: center; align-items: center; width: 100%;">
-                    <img src="media/logo.jpg" alt="" class="logo">
+                    <img src="media/logo.jpg" alt="" class="logo" >
                 </div>
-                <div class="txt">
+                <div class="txt" style="font-size: 80%; display: flex; justify-content: center;align-items: center;flex-direction: column;">
                     <h1>ABOUT US</h1>
-                    <p style="text-indent: 20px;padding: 10px; text-align: center;">
-                        OSSEC (open Source Software Ensi Club) is a club inaugurated at the National School of Computer Sciences founded in 2012. Our Club is involved in activities and
-                        diverse events. <br>
-                        Our mission is to spread the open source philosophy in the community
-                        engineering students as well as the organization of events around this field. <br>
-                        Our goal is to promote the Open Source culture among ENSI students, which is essentially based on the exchange and sharing of knowledge. 
-                    </p>
+                    <p style="width: 80%;">OSSEC (open Source Software Ensi Club) is a club inaugurated at the National School of Computer Sciences founded in 2012. Our Club is involved in activities and diverse events.
+                        Our mission is to spread the open source philosophy in the community engineering students as well as the organization of events around this field.
+                        Our goal is to promote the Open Source culture among ENSI students, which is essentially based on the exchange and sharing of knowledge.</p>
                 </div>
-                <div class="arrow-container" id="arrowContainer">
-                    <div class="arrow"></div>
+                <div class="numbers">
+                    <div class="num"><a href="#section1"> INSTALL PARTY</a></div>
+                    <div class="num"><a href="#section1"> TUNIHACK </a></div>
+                    <div class="num"><a href="#section1"> CODEBREAKER</a></div>
+                    <div class="num"><a href="#section1"> PROJECT'S DAY</a></div>
                 </div>
             </div>    
         </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         <!--Image Slider-->
-        <section class="section" >
-                <div class="glide">
-                    <div class="glide__track" data-glide-el="track" >
-                        <ul class="glide__slides" >
-                            <li class="glide__slide"><img src="https://firebasestorage.googleapis.com/v0/b/ensi-40-resources.appspot.com/o/ENACTUS%2FIMG_3389.png?alt=media&token=480e8dfe-d35f-464a-92b3-6894d8df79cb" alt="Image 1"></li>
-                            <li class="glide__slide"><img src="https://firebasestorage.googleapis.com/v0/b/ensi-40-resources.appspot.com/o/ENACTUS%2FP1011527.JPG?alt=media&token=6f7f2529-b53b-4c29-beef-484484c5e8d5" alt="Image 1"></li>
-                            <li class="glide__slide"><img src="https://firebasestorage.googleapis.com/v0/b/ensi-40-resources.appspot.com/o/ENACTUS%2FP1012497.JPG?alt=media&token=ef14ca9d-8583-45ff-a2b6-7605312dd763" alt="Image 1"></li>
-                            <li class="glide__slide"><img src="https://firebasestorage.googleapis.com/v0/b/ensi-40-resources.appspot.com/o/ENACTUS%2FP1012767.JPG?alt=media&token=a0162843-dd82-43f9-94bc-f80da276f42a" alt="Image 1"></li>
-                            <li class="glide__slide"><img src="https://firebasestorage.googleapis.com/v0/b/ensi-40-resources.appspot.com/o/ENACTUS%2FP1012779.JPG?alt=media&token=7607ceaf-92f2-424c-a4cc-d6ef79bd54f4" alt="Image 1"></li>
-                            <li class="glide__slide"><img src="https://firebasestorage.googleapis.com/v0/b/ensi-40-resources.appspot.com/o/ENACTUS%2FP1012812.JPG?alt=media&token=12d0937e-ecd6-4594-b5d3-784e11e0a549" alt="Image 1"></li>
-                        </ul>
-                    </div>
-                </div>
-                <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
-                <script src="../../Prefabs/slider.js"></script>
-        </section>
-        
+        <section class="section" id="section1">
+            <div class="glide">
+                <div class="glide__track" data-glide-el="track" >
+                    <ul class="glide__slides" >
+                        <li class="glide__slide"><img src="media/cov.png" alt="Image 1" ></li>
+                        <li class="glide__slide"><img src="media/DSC01175.png" alt="Image 2"></li>
+                        <li class="glide__slide"><img src="media/DSC_1049.jpg" alt="Image 2" ></li>
+                        <li class="glide__slide"><img src="media/DSC_1238.jpg" alt="Image 2" ></li>
+                        <li class="glide__slide"><img src="media/IMG-20240207-WA0089.jpg" alt="Image 2" ></li>
 
-        <!--Video Section-->
+                    </ul>
+                </div>
+            </div>
+            <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+            <script src="../../Prefabs/slider.js"></script>
+        </section>
+
+
+
         <section class="section">
             <div style="height: 100%;width: 100%; display: flex; align-items: center; justify-content: center;flex-direction: column;">
-                <iframe src="https://drive.google.com/file/d/1NvfRrFsN4yEtyIWJ8YzGj7lbh-lDICRQ/preview" width="50%" height="60%" style="border-radius: 20px; box-shadow: 0px 5px 5px rgba(0,0,0,0.5);"></iframe>
-                <h1 style="text-align: center; color: #ffd870;">#WE_CHANGE_THE_ODDS</h1>
+                <iframe src="https://drive.google.com/file/u/2/d/1-proKqpmfH5aCf98aReGmGOyxa0dGZyt/preview" width="50%" height="500px" style="border-radius: 20px; box-shadow: 0px 5px 5px rgba(0,0,0,0.5);"></iframe>
                </div>
         </section>
-
-        
+        <div style="height: 100px; width: 100%;"></div>
         <!--Footer Section-->
         <section class="section" style="display: flex;align-items: end;">
             <div class="footer" style="width: 100%;height: 60%;background-color: #3C3E44;border-radius: 10px 10px 0 0px;box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.2);padding: 20px 50px 0px 50px;">
@@ -180,9 +126,6 @@
                 behavior: 'smooth'
             });
         }
-    </script>
-    -->
+    </script>-->
 </body>
 </html>
-
-
