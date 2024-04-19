@@ -58,7 +58,6 @@ section{
 .txt{
     min-width: 300px;
     width: 100%;
-    padding: 7% 10% 5% 10%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -264,7 +263,7 @@ section{
 
 .countdown{
     height: 150px;
-    width: 90%;
+    width: 100%;
     display: flex;
     justify-content: space-around;
     border-radius: 20px;
@@ -323,17 +322,15 @@ section{
 }
 
 .hcard-content {
-    width: inherit;
-    height: inherit;
+    width: 120px;
+    height: 120px;
     font-weight: 100px;
     transform: translateY(20%);
     text-align: center;
     opacity: 0;
     transition: transform 500ms ease-out, opacity 500ms ease-out;
+    padding: auto 5px;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
     transition-duration: 0.3s;
 }
@@ -371,3 +368,17 @@ a{
 /* -------- */
 
 
+.participate{
+    text-decoration: none;
+    background-color: #00C2FF;
+    padding: 5px 30px;
+    border-radius: 20px;
+    color: white;
+    transition-duration: 0.3s;
+    font-size: 80%;
+}
+
+.participate:hover{
+    background-color: white;
+    color: #00C2FF;
+}

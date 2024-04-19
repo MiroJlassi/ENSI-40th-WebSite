@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter"> <!--google fonts-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css"> <!--lib for the slider-->
+    <link rel="stylesheet" href="../../Prefabs/Scroll.css"> <!--scroll-->
+    <title>OSSEC</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <div id="top"></div><a href="index.html#top" style="z-index: 100; text-decoration: none; position: fixed; bottom: 10px; right: 20px; width: 40px; height: 40px; background-color: #00C2FF; border-radius: 50%;text-align: center;display: flex;align-items: center;justify-content: center;opacity: 0.5;">↑</a>
+
+        <!--NAV BAR-->
+        <div class="navbar">
+            <link rel="stylesheet" href="../../Prefabs/navBar.css">
+            <div style="width: 50%;"></div>
+            <div class="menu-icon" onclick="toggleMenu()">☰</div>
+            <a href="../../index.html#home" class="navigation"><div>HOME</div></a>
+            <a href="../../index.html#event1" class="navigation"><div>EVENT1</div></a>
+            <a href="../../index.html#event2" class="navigation"><div>EVENT2</div></a>
+            <a href="../../index.html#club" class="navigation"><div>CLUBS</div></a>
+            <a href="../../index.html" class="navigation"><div class="registrebtn">REGISTRE</div></a>
+        </div>
+        <script>
+            function toggleMenu() {
+            var navbar = document.querySelector('.navbar');
+            navbar.classList.toggle('menu-open');
+            }
+        </script>
+        <!--Cover Section-->
+        <section class="section">
+            <img src="media/cov.png" class="covervideo" >
+            <div class="arrow-container" id="arrowContainer">
+                <div class="arrow"></div>
+            </div>
+        </section>
+        <!--Club Description-->
+        <section class="section">
+            <div class="main">
+                <div style="display: flex; justify-content: center; align-items: center; width: 100%;">
+                    <img src="media/logo.jpg" alt="" class="logo" >
+                </div>
+                <div class="txt" style="font-size: 80%; display: flex; justify-content: center;align-items: center;flex-direction: column;">
+                    <h1>ABOUT US</h1>
+                    <p style="width: 80%;">OSSEC (open Source Software Ensi Club) is a club inaugurated at the National School of Computer Sciences founded in 2012. Our Club is involved in activities and diverse events.
+                        Our mission is to spread the open source philosophy in the community engineering students as well as the organization of events around this field.
+                        Our goal is to promote the Open Source culture among ENSI students, which is essentially based on the exchange and sharing of knowledge.</p>
+                </div>
+                <div class="numbers">
+                    <div class="num"><a href="#section1"> INSTALL PARTY</a></div>
+                    <div class="num"><a href="#section1"> TUNIHACK </a></div>
+                    <div class="num"><a href="#section1"> CODEBREAKER</a></div>
+                    <div class="num"><a href="#section1"> PROJECT'S DAY</a></div>
+                </div>
+            </div>    
+        </section>
+        <!--Image Slider-->
+        <section class="section" id="section1">
+            <div class="glide">
+                <div class="glide__track" data-glide-el="track" >
+                    <ul class="glide__slides" >
+                        <li class="glide__slide"><img src="media/cov.png" alt="Image 1" ></li>
+                        <li class="glide__slide"><img src="media/DSC01175.png" alt="Image 2"></li>
+                        <li class="glide__slide"><img src="media/DSC_1049.jpg" alt="Image 2" ></li>
+                        <li class="glide__slide"><img src="media/DSC_1238.jpg" alt="Image 2" ></li>
+                        <li class="glide__slide"><img src="media/IMG-20240207-WA0089.jpg" alt="Image 2" ></li>
+
+                    </ul>
+                </div>
+            </div>
+            <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+            <script src="../../Prefabs/slider.js"></script>
+        </section>
+
+
+
+        <section class="section">
+            <div style="height: 100%;width: 100%; display: flex; align-items: center; justify-content: center;flex-direction: column;">
+                <iframe src="https://drive.google.com/file/u/2/d/1-proKqpmfH5aCf98aReGmGOyxa0dGZyt/preview" width="50%" height="500px" style="border-radius: 20px; box-shadow: 0px 5px 5px rgba(0,0,0,0.5);"></iframe>
+               </div>
+        </section>
+        <div style="height: 100px; width: 100%;"></div>
+        <!--Footer Section-->
+        <section class="section" style="display: flex;align-items: end;">
+            <div class="footer" style="width: 100%;height: 60%;background-color: #3C3E44;border-radius: 10px 10px 0 0px;box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.2);padding: 20px 50px 0px 50px;">
+                <div>
+                    <h1>
+                        REACH OPEN SOURCE SOFTWAR ENSI CLUB
+                    </h1>
+                    <div style="height:2px; background-color: #747579; width: 60%;margin-bottom: 10px;    box-shadow: 0px 5px 5px rgba(0,0,0,0.2);"> </div>
+                    <div style="display: flex;">
+                        <div style="width: 100%; height: 100px; height: 100%;">
+                            <div>
+
+                            </div>
+                            <h3>CONTACT US</h3>
+                            <span><img style="height: 30px; margin-right: 10px;" src="https://firebasestorage.googleapis.com/v0/b/ensi-40-resources.appspot.com/o/SOCIAL%20LOGO%2Fpoint-denveloppe.png?alt=media&token=11758bda-6c61-4aa2-9f8c-283b99c88702" alt=""></span><span>EMAIL : ossec@ensi-uma.tn </span><br>
+                            <h3>FOLLOW US:</h3>
+                            <a href="https://www.facebook.com/ossec.tn"><img style="height: 30px;" src="https://firebasestorage.googleapis.com/v0/b/ensi-40-resources.appspot.com/o/SOCIAL%20LOGO%2Ffacebook.png?alt=media&token=fa3522f4-2161-49d0-ac55-c44ad7474d36" alt=""></a>
+                            <a href="https://www.instagram.com/ossec_ensi/"><img style="height: 30px;" src="https://firebasestorage.googleapis.com/v0/b/ensi-40-resources.appspot.com/o/SOCIAL%20LOGO%2Finstagram.png?alt=media&token=617fd65d-ccf7-4b8a-a1ef-57e5c386b7a9" alt=""></a>
+                            <a href="https://www.linkedin.com/company/ossec-ensi/"><img style="height: 30px;" src="https://firebasestorage.googleapis.com/v0/b/ensi-40-resources.appspot.com/o/SOCIAL%20LOGO%2Flinkedin.png?alt=media&token=a32267ef-4999-4cfc-b33c-15481f1d7071" alt=""></a>
+                            <a href="https://www.youtube.com/@OssecTn"><img style="height: 30px;" src="https://firebasestorage.googleapis.com/v0/b/ensi-40-resources.appspot.com/o/SOCIAL%20LOGO%2Fyoutube.png?alt=media&token=b9b82f59-ddf0-4602-9fed-cf7199009f1c" alt=""></a>
+                            <h3>WEBSITE</h3>
+                            <a href="https://ossec.tn/"><img style="height: 30px;" src="https://firebasestorage.googleapis.com/v0/b/ensi-40-resources.appspot.com/o/SOCIAL%20LOGO%2Falt-du-site.png?alt=media&token=67140264-2ac7-4ad3-9be5-e4c63832bcfa" alt=""></a>
+                        </div>
+                    </div>  
+                </div>
+                <div style="height:2px; background-color: #747579; width: 60%;margin-top:20px;    box-shadow: 0px 5px 5px rgba(0,0,0,0.2);"> </div>
+
+            </div>
+        </section>
+    </div>
+
+
+    <!-- UP ARROW !! 
+    <div id="scrollToTop" onclick="scrollToTop()">↑</div>
+    <script>
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>-->
+</body>
+</html>
